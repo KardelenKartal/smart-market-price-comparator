@@ -1,0 +1,1110 @@
+{
+  "meta": {
+    "description": "Smart Shopping Route Planner — mağaza grafiği. 3 başlangıç + 15 mağaza (3 şube × 5 zincir), ~2km çap.",
+    "startNodes": [
+      "START_UST_KAPI",
+      "START_ALT_KAPI",
+      "START_USER_GPS"
+    ],
+    "storeNodes": [
+      "A101-01",
+      "A101-02",
+      "A101-03",
+      "BIM-01",
+      "BIM-02",
+      "BIM-03",
+      "SOK-01",
+      "SOK-02",
+      "SOK-03",
+      "MIGROS-01",
+      "MIGROS-02",
+      "MIGROS-03",
+      "CF-01",
+      "CF-02",
+      "CF-03"
+    ],
+    "chains": [
+      "A101",
+      "BIM",
+      "SOK",
+      "MIGROS",
+      "CAREFOUR"
+    ],
+    "branchesPerChain": 3,
+    "radiusM": 2000,
+    "walkingSpeedMperMin": 80,
+    "totalNodes": 18,
+    "staticEdges": 136,
+    "note": "START_USER_GPS kenarları çalışma zamanında hesaplanır."
+  },
+  "nodes": [
+    {
+      "id": "START_UST_KAPI",
+      "type": "START",
+      "name": "Yeditepe Üst Kapı",
+      "description": "Kayışdağı Cd. üst giriş kapısı",
+      "lat": 40.9755,
+      "lng": 29.1498,
+      "isUserLocation": false,
+      "distanceFromUstKapiM": 0,
+      "walkingMinFromUstKapi": 0
+    },
+    {
+      "id": "START_ALT_KAPI",
+      "type": "START",
+      "name": "Yeditepe Alt Kapı",
+      "description": "İçerenköy tarafı alt giriş kapısı",
+      "lat": 40.9698,
+      "lng": 29.1461,
+      "isUserLocation": false,
+      "distanceFromUstKapiM": 706,
+      "walkingMinFromUstKapi": 9
+    },
+    {
+      "id": "START_USER_GPS",
+      "type": "START",
+      "name": "Kullanıcı Konumu (GPS)",
+      "description": "Cihazın anlık GPS konumu — lat/lng çalışma zamanında doldurulur",
+      "lat": null,
+      "lng": null,
+      "isUserLocation": true
+    },
+    {
+      "id": "A101-01",
+      "type": "STORE",
+      "chain": "A101",
+      "name": "A101 Kayışdağı Şubesi",
+      "address": "Kayışdağı Cd. No:48, Ataşehir",
+      "lat": 40.9762,
+      "lng": 29.1459,
+      "distanceFromUstKapiM": 337,
+      "walkingMinFromUstKapi": 4
+    },
+    {
+      "id": "A101-02",
+      "type": "STORE",
+      "chain": "A101",
+      "name": "A101 Atilla Cd. Şubesi",
+      "address": "Atilla Cd. No:11, Ataşehir",
+      "lat": 40.9833,
+      "lng": 29.145,
+      "distanceFromUstKapiM": 956,
+      "walkingMinFromUstKapi": 12
+    },
+    {
+      "id": "A101-03",
+      "type": "STORE",
+      "chain": "A101",
+      "name": "A101 Üst Kapı Şubesi",
+      "address": "19 Mayıs Cd. No:6, Ataşehir",
+      "lat": 40.9748,
+      "lng": 29.1473,
+      "distanceFromUstKapiM": 224,
+      "walkingMinFromUstKapi": 3
+    },
+    {
+      "id": "BIM-01",
+      "type": "STORE",
+      "chain": "BIM",
+      "name": "BIM Rumeli Cd. Şubesi",
+      "address": "Rumeli Cd. No:34, Ataşehir",
+      "lat": 40.98,
+      "lng": 29.143,
+      "distanceFromUstKapiM": 759,
+      "walkingMinFromUstKapi": 9
+    },
+    {
+      "id": "BIM-02",
+      "type": "STORE",
+      "chain": "BIM",
+      "name": "BIM Nasır Cd. Şubesi",
+      "address": "Nasır Cd. No:20, Ataşehir",
+      "lat": 40.9838,
+      "lng": 29.1442,
+      "distanceFromUstKapiM": 1036,
+      "walkingMinFromUstKapi": 13
+    },
+    {
+      "id": "BIM-03",
+      "type": "STORE",
+      "chain": "BIM",
+      "name": "BIM İnönü Şubesi",
+      "address": "İnönü Cd. No:55, Ataşehir",
+      "lat": 40.9715,
+      "lng": 29.144,
+      "distanceFromUstKapiM": 659,
+      "walkingMinFromUstKapi": 8
+    },
+    {
+      "id": "SOK-01",
+      "type": "STORE",
+      "chain": "SOK",
+      "name": "ŞOK Kayışdağı Cd. Şubesi",
+      "address": "Kayışdağı Cd. No:112, Ataşehir",
+      "lat": 40.9778,
+      "lng": 29.1525,
+      "distanceFromUstKapiM": 342,
+      "walkingMinFromUstKapi": 4
+    },
+    {
+      "id": "SOK-02",
+      "type": "STORE",
+      "chain": "SOK",
+      "name": "ŞOK Akyazı Cd. Şubesi",
+      "address": "Akyazı Cd. No:18, Ataşehir",
+      "lat": 40.9862,
+      "lng": 29.1448,
+      "distanceFromUstKapiM": 1262,
+      "walkingMinFromUstKapi": 16
+    },
+    {
+      "id": "SOK-03",
+      "type": "STORE",
+      "chain": "SOK",
+      "name": "ŞOK İnkilap Cd. Şubesi",
+      "address": "İnkilap Cd. No:9, Ataşehir",
+      "lat": 40.973,
+      "lng": 29.151,
+      "distanceFromUstKapiM": 296,
+      "walkingMinFromUstKapi": 4
+    },
+    {
+      "id": "MIGROS-01",
+      "type": "STORE",
+      "chain": "MIGROS",
+      "name": "Migros Ataşehir Şubesi",
+      "address": "Atilla Cd. No:22, Ataşehir",
+      "lat": 40.9835,
+      "lng": 29.1462,
+      "distanceFromUstKapiM": 939,
+      "walkingMinFromUstKapi": 12
+    },
+    {
+      "id": "MIGROS-02",
+      "type": "STORE",
+      "chain": "MIGROS",
+      "name": "Migros Alapark Şubesi",
+      "address": "Alapark Cd. No:3, Ataşehir",
+      "lat": 40.9901,
+      "lng": 29.1407,
+      "distanceFromUstKapiM": 1794,
+      "walkingMinFromUstKapi": 22
+    },
+    {
+      "id": "MIGROS-03",
+      "type": "STORE",
+      "chain": "MIGROS",
+      "name": "Migros Kayışdağı Şubesi",
+      "address": "Kayışdağı Cd. No:200, Ataşehir",
+      "lat": 40.9752,
+      "lng": 29.144,
+      "distanceFromUstKapiM": 488,
+      "walkingMinFromUstKapi": 6
+    },
+    {
+      "id": "CF-01",
+      "type": "STORE",
+      "chain": "CAREFOUR",
+      "name": "CarrefourSA Kayışdağı Şubesi",
+      "address": "Çakmakçı Sok. No:5, Ataşehir",
+      "lat": 40.9748,
+      "lng": 29.1533,
+      "distanceFromUstKapiM": 304,
+      "walkingMinFromUstKapi": 4
+    },
+    {
+      "id": "CF-02",
+      "type": "STORE",
+      "chain": "CAREFOUR",
+      "name": "CarrefourSA İçerenköy Şubesi",
+      "address": "Derin Sk. No:12, Ataşehir",
+      "lat": 40.972,
+      "lng": 29.149,
+      "distanceFromUstKapiM": 395,
+      "walkingMinFromUstKapi": 5
+    },
+    {
+      "id": "CF-03",
+      "type": "STORE",
+      "chain": "CAREFOUR",
+      "name": "CarrefourSA Atatürk Şubesi",
+      "address": "Atatürk Mh. Cd. No:8, Ataşehir",
+      "lat": 40.981,
+      "lng": 29.141,
+      "distanceFromUstKapiM": 959,
+      "walkingMinFromUstKapi": 12
+    }
+  ],
+  "edges": [
+    {
+      "from": "START_UST_KAPI",
+      "to": "START_ALT_KAPI",
+      "distanceM": 706,
+      "walkingMinutes": 9
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "A101-01",
+      "distanceM": 337,
+      "walkingMinutes": 4
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "A101-02",
+      "distanceM": 956,
+      "walkingMinutes": 12
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "A101-03",
+      "distanceM": 224,
+      "walkingMinutes": 3
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "BIM-01",
+      "distanceM": 759,
+      "walkingMinutes": 9
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "BIM-02",
+      "distanceM": 1036,
+      "walkingMinutes": 13
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "BIM-03",
+      "distanceM": 659,
+      "walkingMinutes": 8
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "SOK-01",
+      "distanceM": 342,
+      "walkingMinutes": 4
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "SOK-02",
+      "distanceM": 1262,
+      "walkingMinutes": 16
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "SOK-03",
+      "distanceM": 296,
+      "walkingMinutes": 4
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "MIGROS-01",
+      "distanceM": 939,
+      "walkingMinutes": 12
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "MIGROS-02",
+      "distanceM": 1794,
+      "walkingMinutes": 22
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "MIGROS-03",
+      "distanceM": 488,
+      "walkingMinutes": 6
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "CF-01",
+      "distanceM": 304,
+      "walkingMinutes": 4
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "CF-02",
+      "distanceM": 395,
+      "walkingMinutes": 5
+    },
+    {
+      "from": "START_UST_KAPI",
+      "to": "CF-03",
+      "distanceM": 959,
+      "walkingMinutes": 12
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "A101-01",
+      "distanceM": 712,
+      "walkingMinutes": 9
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "A101-02",
+      "distanceM": 1504,
+      "walkingMinutes": 19
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "A101-03",
+      "distanceM": 565,
+      "walkingMinutes": 7
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "BIM-01",
+      "distanceM": 1164,
+      "walkingMinutes": 15
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "BIM-02",
+      "distanceM": 1565,
+      "walkingMinutes": 20
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "BIM-03",
+      "distanceM": 258,
+      "walkingMinutes": 3
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "SOK-01",
+      "distanceM": 1039,
+      "walkingMinutes": 13
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "SOK-02",
+      "distanceM": 1827,
+      "walkingMinutes": 23
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "SOK-03",
+      "distanceM": 544,
+      "walkingMinutes": 7
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "MIGROS-01",
+      "distanceM": 1523,
+      "walkingMinutes": 19
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "MIGROS-02",
+      "distanceM": 2302,
+      "walkingMinutes": 29
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "MIGROS-03",
+      "distanceM": 626,
+      "walkingMinutes": 8
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "CF-01",
+      "distanceM": 821,
+      "walkingMinutes": 10
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "CF-02",
+      "distanceM": 345,
+      "walkingMinutes": 4
+    },
+    {
+      "from": "START_ALT_KAPI",
+      "to": "CF-03",
+      "distanceM": 1317,
+      "walkingMinutes": 16
+    },
+    {
+      "from": "A101-01",
+      "to": "A101-02",
+      "distanceM": 793,
+      "walkingMinutes": 10
+    },
+    {
+      "from": "A101-01",
+      "to": "A101-03",
+      "distanceM": 195,
+      "walkingMinutes": 2
+    },
+    {
+      "from": "A101-01",
+      "to": "BIM-01",
+      "distanceM": 488,
+      "walkingMinutes": 6
+    },
+    {
+      "from": "A101-01",
+      "to": "BIM-02",
+      "distanceM": 857,
+      "walkingMinutes": 11
+    },
+    {
+      "from": "A101-01",
+      "to": "BIM-03",
+      "distanceM": 546,
+      "walkingMinutes": 7
+    },
+    {
+      "from": "A101-01",
+      "to": "SOK-01",
+      "distanceM": 582,
+      "walkingMinutes": 7
+    },
+    {
+      "from": "A101-01",
+      "to": "SOK-02",
+      "distanceM": 1116,
+      "walkingMinutes": 14
+    },
+    {
+      "from": "A101-01",
+      "to": "SOK-03",
+      "distanceM": 557,
+      "walkingMinutes": 7
+    },
+    {
+      "from": "A101-01",
+      "to": "MIGROS-01",
+      "distanceM": 812,
+      "walkingMinutes": 10
+    },
+    {
+      "from": "A101-01",
+      "to": "MIGROS-02",
+      "distanceM": 1606,
+      "walkingMinutes": 20
+    },
+    {
+      "from": "A101-01",
+      "to": "MIGROS-03",
+      "distanceM": 194,
+      "walkingMinutes": 2
+    },
+    {
+      "from": "A101-01",
+      "to": "CF-01",
+      "distanceM": 640,
+      "walkingMinutes": 8
+    },
+    {
+      "from": "A101-01",
+      "to": "CF-02",
+      "distanceM": 535,
+      "walkingMinutes": 7
+    },
+    {
+      "from": "A101-01",
+      "to": "CF-03",
+      "distanceM": 674,
+      "walkingMinutes": 8
+    },
+    {
+      "from": "A101-02",
+      "to": "A101-03",
+      "distanceM": 965,
+      "walkingMinutes": 12
+    },
+    {
+      "from": "A101-02",
+      "to": "BIM-01",
+      "distanceM": 404,
+      "walkingMinutes": 5
+    },
+    {
+      "from": "A101-02",
+      "to": "BIM-02",
+      "distanceM": 87,
+      "walkingMinutes": 1
+    },
+    {
+      "from": "A101-02",
+      "to": "BIM-03",
+      "distanceM": 1315,
+      "walkingMinutes": 16
+    },
+    {
+      "from": "A101-02",
+      "to": "SOK-01",
+      "distanceM": 878,
+      "walkingMinutes": 11
+    },
+    {
+      "from": "A101-02",
+      "to": "SOK-02",
+      "distanceM": 323,
+      "walkingMinutes": 4
+    },
+    {
+      "from": "A101-02",
+      "to": "SOK-03",
+      "distanceM": 1251,
+      "walkingMinutes": 16
+    },
+    {
+      "from": "A101-02",
+      "to": "MIGROS-01",
+      "distanceM": 103,
+      "walkingMinutes": 1
+    },
+    {
+      "from": "A101-02",
+      "to": "MIGROS-02",
+      "distanceM": 838,
+      "walkingMinutes": 10
+    },
+    {
+      "from": "A101-02",
+      "to": "MIGROS-03",
+      "distanceM": 905,
+      "walkingMinutes": 11
+    },
+    {
+      "from": "A101-02",
+      "to": "CF-01",
+      "distanceM": 1174,
+      "walkingMinutes": 15
+    },
+    {
+      "from": "A101-02",
+      "to": "CF-02",
+      "distanceM": 1301,
+      "walkingMinutes": 16
+    },
+    {
+      "from": "A101-02",
+      "to": "CF-03",
+      "distanceM": 422,
+      "walkingMinutes": 5
+    },
+    {
+      "from": "A101-03",
+      "to": "BIM-01",
+      "distanceM": 682,
+      "walkingMinutes": 9
+    },
+    {
+      "from": "A101-03",
+      "to": "BIM-02",
+      "distanceM": 1034,
+      "walkingMinutes": 13
+    },
+    {
+      "from": "A101-03",
+      "to": "BIM-03",
+      "distanceM": 460,
+      "walkingMinutes": 6
+    },
+    {
+      "from": "A101-03",
+      "to": "SOK-01",
+      "distanceM": 549,
+      "walkingMinutes": 7
+    },
+    {
+      "from": "A101-03",
+      "to": "SOK-02",
+      "distanceM": 1285,
+      "walkingMinutes": 16
+    },
+    {
+      "from": "A101-03",
+      "to": "SOK-03",
+      "distanceM": 370,
+      "walkingMinutes": 5
+    },
+    {
+      "from": "A101-03",
+      "to": "MIGROS-01",
+      "distanceM": 972,
+      "walkingMinutes": 12
+    },
+    {
+      "from": "A101-03",
+      "to": "MIGROS-02",
+      "distanceM": 1789,
+      "walkingMinutes": 22
+    },
+    {
+      "from": "A101-03",
+      "to": "MIGROS-03",
+      "distanceM": 281,
+      "walkingMinutes": 4
+    },
+    {
+      "from": "A101-03",
+      "to": "CF-01",
+      "distanceM": 504,
+      "walkingMinutes": 6
+    },
+    {
+      "from": "A101-03",
+      "to": "CF-02",
+      "distanceM": 342,
+      "walkingMinutes": 4
+    },
+    {
+      "from": "A101-03",
+      "to": "CF-03",
+      "distanceM": 869,
+      "walkingMinutes": 11
+    },
+    {
+      "from": "BIM-01",
+      "to": "BIM-02",
+      "distanceM": 434,
+      "walkingMinutes": 5
+    },
+    {
+      "from": "BIM-01",
+      "to": "BIM-03",
+      "distanceM": 949,
+      "walkingMinutes": 12
+    },
+    {
+      "from": "BIM-01",
+      "to": "SOK-01",
+      "distanceM": 834,
+      "walkingMinutes": 10
+    },
+    {
+      "from": "BIM-01",
+      "to": "SOK-02",
+      "distanceM": 706,
+      "walkingMinutes": 9
+    },
+    {
+      "from": "BIM-01",
+      "to": "SOK-03",
+      "distanceM": 1028,
+      "walkingMinutes": 13
+    },
+    {
+      "from": "BIM-01",
+      "to": "MIGROS-01",
+      "distanceM": 473,
+      "walkingMinutes": 6
+    },
+    {
+      "from": "BIM-01",
+      "to": "MIGROS-02",
+      "distanceM": 1140,
+      "walkingMinutes": 14
+    },
+    {
+      "from": "BIM-01",
+      "to": "MIGROS-03",
+      "distanceM": 540,
+      "walkingMinutes": 7
+    },
+    {
+      "from": "BIM-01",
+      "to": "CF-01",
+      "distanceM": 1040,
+      "walkingMinutes": 13
+    },
+    {
+      "from": "BIM-01",
+      "to": "CF-02",
+      "distanceM": 1022,
+      "walkingMinutes": 13
+    },
+    {
+      "from": "BIM-01",
+      "to": "CF-03",
+      "distanceM": 201,
+      "walkingMinutes": 3
+    },
+    {
+      "from": "BIM-02",
+      "to": "BIM-03",
+      "distanceM": 1368,
+      "walkingMinutes": 17
+    },
+    {
+      "from": "BIM-02",
+      "to": "SOK-01",
+      "distanceM": 965,
+      "walkingMinutes": 12
+    },
+    {
+      "from": "BIM-02",
+      "to": "SOK-02",
+      "distanceM": 272,
+      "walkingMinutes": 3
+    },
+    {
+      "from": "BIM-02",
+      "to": "SOK-03",
+      "distanceM": 1330,
+      "walkingMinutes": 17
+    },
+    {
+      "from": "BIM-02",
+      "to": "MIGROS-01",
+      "distanceM": 171,
+      "walkingMinutes": 2
+    },
+    {
+      "from": "BIM-02",
+      "to": "MIGROS-02",
+      "distanceM": 760,
+      "walkingMinutes": 10
+    },
+    {
+      "from": "BIM-02",
+      "to": "MIGROS-03",
+      "distanceM": 956,
+      "walkingMinutes": 12
+    },
+    {
+      "from": "BIM-02",
+      "to": "CF-01",
+      "distanceM": 1259,
+      "walkingMinutes": 16
+    },
+    {
+      "from": "BIM-02",
+      "to": "CF-02",
+      "distanceM": 1373,
+      "walkingMinutes": 17
+    },
+    {
+      "from": "BIM-02",
+      "to": "CF-03",
+      "distanceM": 411,
+      "walkingMinutes": 5
+    },
+    {
+      "from": "BIM-03",
+      "to": "SOK-01",
+      "distanceM": 1000,
+      "walkingMinutes": 12
+    },
+    {
+      "from": "BIM-03",
+      "to": "SOK-02",
+      "distanceM": 1636,
+      "walkingMinutes": 20
+    },
+    {
+      "from": "BIM-03",
+      "to": "SOK-03",
+      "distanceM": 611,
+      "walkingMinutes": 8
+    },
+    {
+      "from": "BIM-03",
+      "to": "MIGROS-01",
+      "distanceM": 1347,
+      "walkingMinutes": 17
+    },
+    {
+      "from": "BIM-03",
+      "to": "MIGROS-02",
+      "distanceM": 2087,
+      "walkingMinutes": 26
+    },
+    {
+      "from": "BIM-03",
+      "to": "MIGROS-03",
+      "distanceM": 411,
+      "walkingMinutes": 5
+    },
+    {
+      "from": "BIM-03",
+      "to": "CF-01",
+      "distanceM": 863,
+      "walkingMinutes": 11
+    },
+    {
+      "from": "BIM-03",
+      "to": "CF-02",
+      "distanceM": 423,
+      "walkingMinutes": 5
+    },
+    {
+      "from": "BIM-03",
+      "to": "CF-03",
+      "distanceM": 1086,
+      "walkingMinutes": 14
+    },
+    {
+      "from": "SOK-01",
+      "to": "SOK-02",
+      "distanceM": 1136,
+      "walkingMinutes": 14
+    },
+    {
+      "from": "SOK-01",
+      "to": "SOK-03",
+      "distanceM": 548,
+      "walkingMinutes": 7
+    },
+    {
+      "from": "SOK-01",
+      "to": "MIGROS-01",
+      "distanceM": 825,
+      "walkingMinutes": 10
+    },
+    {
+      "from": "SOK-01",
+      "to": "MIGROS-02",
+      "distanceM": 1689,
+      "walkingMinutes": 21
+    },
+    {
+      "from": "SOK-01",
+      "to": "MIGROS-03",
+      "distanceM": 770,
+      "walkingMinutes": 10
+    },
+    {
+      "from": "SOK-01",
+      "to": "CF-01",
+      "distanceM": 340,
+      "walkingMinutes": 4
+    },
+    {
+      "from": "SOK-01",
+      "to": "CF-02",
+      "distanceM": 709,
+      "walkingMinutes": 9
+    },
+    {
+      "from": "SOK-01",
+      "to": "CF-03",
+      "distanceM": 1029,
+      "walkingMinutes": 13
+    },
+    {
+      "from": "SOK-02",
+      "to": "SOK-03",
+      "distanceM": 1557,
+      "walkingMinutes": 19
+    },
+    {
+      "from": "SOK-02",
+      "to": "MIGROS-01",
+      "distanceM": 322,
+      "walkingMinutes": 4
+    },
+    {
+      "from": "SOK-02",
+      "to": "MIGROS-02",
+      "distanceM": 554,
+      "walkingMinutes": 7
+    },
+    {
+      "from": "SOK-02",
+      "to": "MIGROS-03",
+      "distanceM": 1225,
+      "walkingMinutes": 15
+    },
+    {
+      "from": "SOK-02",
+      "to": "CF-01",
+      "distanceM": 1455,
+      "walkingMinutes": 18
+    },
+    {
+      "from": "SOK-02",
+      "to": "CF-02",
+      "distanceM": 1618,
+      "walkingMinutes": 20
+    },
+    {
+      "from": "SOK-02",
+      "to": "CF-03",
+      "distanceM": 660,
+      "walkingMinutes": 8
+    },
+    {
+      "from": "SOK-03",
+      "to": "MIGROS-01",
+      "distanceM": 1235,
+      "walkingMinutes": 15
+    },
+    {
+      "from": "SOK-03",
+      "to": "MIGROS-02",
+      "distanceM": 2089,
+      "walkingMinutes": 26
+    },
+    {
+      "from": "SOK-03",
+      "to": "MIGROS-03",
+      "distanceM": 637,
+      "walkingMinutes": 8
+    },
+    {
+      "from": "SOK-03",
+      "to": "CF-01",
+      "distanceM": 278,
+      "walkingMinutes": 3
+    },
+    {
+      "from": "SOK-03",
+      "to": "CF-02",
+      "distanceM": 201,
+      "walkingMinutes": 3
+    },
+    {
+      "from": "SOK-03",
+      "to": "CF-03",
+      "distanceM": 1223,
+      "walkingMinutes": 15
+    },
+    {
+      "from": "MIGROS-01",
+      "to": "MIGROS-02",
+      "distanceM": 867,
+      "walkingMinutes": 11
+    },
+    {
+      "from": "MIGROS-01",
+      "to": "MIGROS-03",
+      "distanceM": 941,
+      "walkingMinutes": 12
+    },
+    {
+      "from": "MIGROS-01",
+      "to": "CF-01",
+      "distanceM": 1136,
+      "walkingMinutes": 14
+    },
+    {
+      "from": "MIGROS-01",
+      "to": "CF-02",
+      "distanceM": 1300,
+      "walkingMinutes": 16
+    },
+    {
+      "from": "MIGROS-01",
+      "to": "CF-03",
+      "distanceM": 518,
+      "walkingMinutes": 6
+    },
+    {
+      "from": "MIGROS-02",
+      "to": "MIGROS-03",
+      "distanceM": 1680,
+      "walkingMinutes": 21
+    },
+    {
+      "from": "MIGROS-02",
+      "to": "CF-01",
+      "distanceM": 2003,
+      "walkingMinutes": 25
+    },
+    {
+      "from": "MIGROS-02",
+      "to": "CF-02",
+      "distanceM": 2130,
+      "walkingMinutes": 27
+    },
+    {
+      "from": "MIGROS-02",
+      "to": "CF-03",
+      "distanceM": 1012,
+      "walkingMinutes": 13
+    },
+    {
+      "from": "MIGROS-03",
+      "to": "CF-01",
+      "distanceM": 782,
+      "walkingMinutes": 10
+    },
+    {
+      "from": "MIGROS-03",
+      "to": "CF-02",
+      "distanceM": 550,
+      "walkingMinutes": 7
+    },
+    {
+      "from": "MIGROS-03",
+      "to": "CF-03",
+      "distanceM": 692,
+      "walkingMinutes": 9
+    },
+    {
+      "from": "CF-01",
+      "to": "CF-02",
+      "distanceM": 477,
+      "walkingMinutes": 6
+    },
+    {
+      "from": "CF-01",
+      "to": "CF-03",
+      "distanceM": 1242,
+      "walkingMinutes": 16
+    },
+    {
+      "from": "CF-02",
+      "to": "CF-03",
+      "distanceM": 1205,
+      "walkingMinutes": 15
+    }
+  ],
+  "suggestedRoutes": [
+    {
+      "routeId": "R001",
+      "label": "En Az Mesafe",
+      "optimizationGoal": "MIN_DISTANCE",
+      "compatibleStarts": [
+        "START_UST_KAPI",
+        "START_USER_GPS"
+      ],
+      "stops": [
+        "START_UST_KAPI",
+        "A101-03",
+        "CF-01",
+        "SOK-01"
+      ],
+      "totalDistanceM": 1068,
+      "totalWalkingMinutes": 13
+    },
+    {
+      "routeId": "R002",
+      "label": "En Az Mağaza Sayısı",
+      "optimizationGoal": "MIN_STOPS",
+      "compatibleStarts": [
+        "START_UST_KAPI",
+        "START_ALT_KAPI",
+        "START_USER_GPS"
+      ],
+      "stops": [
+        "START_UST_KAPI",
+        "MIGROS-03",
+        "BIM-01"
+      ],
+      "totalDistanceM": 1028,
+      "totalWalkingMinutes": 13
+    },
+    {
+      "routeId": "R003",
+      "label": "En Az Maliyet",
+      "optimizationGoal": "MIN_COST",
+      "compatibleStarts": [
+        "START_ALT_KAPI",
+        "START_USER_GPS"
+      ],
+      "stops": [
+        "START_ALT_KAPI",
+        "CF-02",
+        "SOK-03",
+        "BIM-03",
+        "MIGROS-01"
+      ],
+      "totalDistanceM": 2504,
+      "totalWalkingMinutes": 31
+    }
+  ]
+}
