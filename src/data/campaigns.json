@@ -1,0 +1,122 @@
+[
+  {
+    "campaignId": "C001",
+    "productName": "MILK",
+    "chain": "MIGROS",
+    "type": "WEEKLY",
+    "discountPercent": 15.0,
+    "discountType": "PERCENTAGE",
+    "startWeek": "W1",
+    "durationDays": 7
+  },
+  {
+    "campaignId": "C002",
+    "productName": "COLA",
+    "chain": "A101",
+    "type": "WEEKLY",
+    "discountPercent": 10.0,
+    "discountType": "PERCENTAGE",
+    "startWeek": "W1",
+    "durationDays": 7
+  },
+  {
+    "campaignId": "C003",
+    "productName": "SHAMPOO",
+    "chain": "BIM",
+    "type": "FLASH",
+    "discountPercent": 20.0,
+    "discountType": "PERCENTAGE",
+    "startWeek": "W1",
+    "durationDays": 2
+  },
+  {
+    "campaignId": "C004",
+    "productName": "CHICKEN",
+    "chain": "CAREFOUR",
+    "type": "WEEKLY",
+    "discountPercent": 12.0,
+    "discountType": "PERCENTAGE",
+    "startWeek": "W2",
+    "durationDays": 7
+  },
+  {
+    "campaignId": "C005",
+    "productName": "EGGS",
+    "chain": "A101",
+    "type": "FLASH",
+    "discountPercent": 25.0,
+    "discountType": "PERCENTAGE",
+    "startWeek": "W2",
+    "durationDays": 2
+  },
+  {
+    "campaignId": "C006",
+    "productName": "WATER",
+    "chain": "MIGROS",
+    "type": "WEEKLY",
+    "discountPercent": 10.0,
+    "discountType": "PERCENTAGE",
+    "startWeek": "W2",
+    "durationDays": 7
+  },
+  {
+    "campaignId": "C007",
+    "productName": "TOILET PAPER",
+    "chain": "BIM",
+    "type": "FLASH",
+    "discountPercent": 15.0,
+    "discountType": "PERCENTAGE",
+    "startWeek": "W3",
+    "durationDays": 2
+  },
+  {
+    "campaignId": "C008",
+    "productName": "COLA",
+    "chain": "SOK",
+    "type": "WEEKLY",
+    "discountPercent": 18.0,
+    "discountType": "PERCENTAGE",
+    "startWeek": "W3",
+    "durationDays": 7
+  },
+  {
+    "campaignId": "C009",
+    "productName": "YOGURT",
+    "chain": "MIGROS",
+    "type": "FLASH",
+    "discountPercent": 30.0,
+    "discountType": "PERCENTAGE",
+    "startWeek": "W3",
+    "durationDays": 2
+  },
+  {
+    "campaignId": "C010",
+    "productName": "CHOCOLATE BAR",
+    "chain": "CAREFOUR",
+    "type": "WEEKLY",
+    "discountPercent": 8.0,
+    "discountType": "PERCENTAGE",
+    "startWeek": "W4",
+    "durationDays": 7
+  },
+  {
+    "campaignId": "C011",
+    "productName": "OIL",
+    "chain": "A101",
+    "type": "FLASH",
+    "discountPercent": 20.0,
+    "discountType": "PERCENTAGE",
+    "startWeek": "W4",
+    "durationDays": 2
+  },
+  {
+    "campaignId": "C012",
+    "productName": "TUNA",
+    "chain": "MIGROS",
+    "type": "WEEKLY",
+    "discountPercent": 12.0,
+    "discountType": "PERCENTAGE",
+    "startWeek": "W4",
+    "durationDays": 7
+  }
+]
