@@ -1,0 +1,92 @@
+[
+  {
+    "storeId": "A101-01",
+    "latitude": 40.9762,
+    "longitude": 29.1459,
+    "address": "Kayışdağı Cd. No:48, Ataşehir"
+  },
+  {
+    "storeId": "A101-02",
+    "latitude": 40.9833,
+    "longitude": 29.145,
+    "address": "Atilla Cd. No:11, Ataşehir"
+  },
+  {
+    "storeId": "A101-03",
+    "latitude": 40.9748,
+    "longitude": 29.1473,
+    "address": "19 Mayıs Cd. No:6, Ataşehir"
+  },
+  {
+    "storeId": "BIM-01",
+    "latitude": 40.98,
+    "longitude": 29.143,
+    "address": "Rumeli Cd. No:34, Ataşehir"
+  },
+  {
+    "storeId": "BIM-02",
+    "latitude": 40.9838,
+    "longitude": 29.1442,
+    "address": "Nasır Cd. No:20, Ataşehir"
+  },
+  {
+    "storeId": "BIM-03",
+    "latitude": 40.9715,
+    "longitude": 29.144,
+    "address": "İnönü Cd. No:55, Ataşehir"
+  },
+  {
+    "storeId": "SOK-01",
+    "latitude": 40.9778,
+    "longitude": 29.1525,
+    "address": "Kayışdağı Cd. No:112, Ataşehir"
+  },
+  {
+    "storeId": "SOK-02",
+    "latitude": 40.9862,
+    "longitude": 29.1448,
+    "address": "Akyazı Cd. No:18, Ataşehir"
+  },
+  {
+    "storeId": "SOK-03",
+    "latitude": 40.973,
+    "longitude": 29.151,
+    "address": "İnkilap Cd. No:9, Ataşehir"
+  },
+  {
+    "storeId": "MIGROS-01",
+    "latitude": 40.9835,
+    "longitude": 29.1462,
+    "address": "Atilla Cd. No:22, Ataşehir"
+  },
+  {
+    "storeId": "MIGROS-02",
+    "latitude": 40.9901,
+    "longitude": 29.1407,
+    "address": "Alapark Cd. No:3, Ataşehir"
+  },
+  {
+    "storeId": "MIGROS-03",
+    "latitude": 40.9752,
+    "longitude": 29.144,
+    "address": "Kayışdağı Cd. No:200, Ataşehir"
+  },
+  {
+    "storeId": "CF-01",
+    "latitude": 40.9748,
+    "longitude": 29.1533,
+    "address": "Çakmakçı Sok. No:5, Ataşehir"
+  },
+  {
+    "storeId": "CF-02",
+    "latitude": 40.972,
+    "longitude": 29.149,
+    "address": "Derin Sk. No:12, Ataşehir"
+  },
+  {
+    "storeId": "CF-03",
+    "latitude": 40.981,
+    "longitude": 29.141,
+    "address": "Atatürk Mh. Cd. No:8, Ataşehir"
+  }
+]
