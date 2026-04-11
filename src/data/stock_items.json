@@ -75,7 +75,7 @@
     "brand": "Tarabya",
     "currentPrice": 107.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0007",
@@ -101,7 +101,7 @@
     "brand": "Sütaş",
     "currentPrice": 299.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0009",
@@ -231,7 +231,7 @@
     "brand": "Teksüt",
     "currentPrice": 379.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0019",
@@ -283,7 +283,7 @@
     "brand": "Mis",
     "currentPrice": 48.9,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0023",
@@ -361,7 +361,7 @@
     "brand": "Mis ",
     "currentPrice": 152.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0029",
@@ -374,7 +374,7 @@
     "brand": "Sütaş",
     "currentPrice": 242.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0030",
@@ -413,7 +413,7 @@
     "brand": "Sütaş",
     "currentPrice": 89.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0033",
@@ -621,7 +621,7 @@
     "brand": "İçim",
     "currentPrice": 47.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0049",
@@ -634,7 +634,7 @@
     "brand": "Carrefour",
     "currentPrice": 130.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0050",
@@ -673,7 +673,7 @@
     "brand": "Carrefour",
     "currentPrice": 186.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0053",
@@ -725,7 +725,7 @@
     "brand": "Keskinoğlu Kalça",
     "currentPrice": 135.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0004",
@@ -738,7 +738,7 @@
     "brand": "Keskinoğlu But",
     "currentPrice": 210.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0005",
@@ -764,7 +764,7 @@
     "brand": "Namet Dana",
     "currentPrice": 315.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0007",
@@ -790,7 +790,7 @@
     "brand": "A101 15'li",
     "currentPrice": 89.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0009",
@@ -803,7 +803,7 @@
     "brand": "Organik 10'lu",
     "currentPrice": 119.99,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0010",
@@ -816,7 +816,7 @@
     "brand": "Omega 6'lı",
     "currentPrice": 48.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0011",
@@ -829,7 +829,7 @@
     "brand": "Dardanel 125g",
     "currentPrice": 62.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0012",
@@ -842,7 +842,7 @@
     "brand": "SuperFresh 225g",
     "currentPrice": 172.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0013",
@@ -933,7 +933,7 @@
     "brand": "Emin Dana Dilim",
     "currentPrice": 196.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0020",
@@ -946,7 +946,7 @@
     "brand": "Namet Dana Kangal",
     "currentPrice": 295.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0021",
@@ -959,7 +959,7 @@
     "brand": "Bili Bili 15'li",
     "currentPrice": 109.9,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0022",
@@ -972,7 +972,7 @@
     "brand": "Bili Bili 30'lu",
     "currentPrice": 183.45,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0023",
@@ -1011,7 +1011,7 @@
     "brand": "Dardanel 250g",
     "currentPrice": 146.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0026",
@@ -1063,7 +1063,7 @@
     "brand": "Gedik Kalça",
     "currentPrice": 135.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0030",
@@ -1089,7 +1089,7 @@
     "brand": "Banvit Sosis",
     "currentPrice": 68.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0032",
@@ -1102,7 +1102,7 @@
     "brand": "Gedik Sosis",
     "currentPrice": 68.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0033",
@@ -1115,7 +1115,7 @@
     "brand": "Banvit Dilim Sucuk",
     "currentPrice": 106.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0034",
@@ -1128,7 +1128,7 @@
     "brand": "Anadolu Çiftliği 10'lu",
     "currentPrice": 105.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0035",
@@ -1167,7 +1167,7 @@
     "brand": "Vatan 2x160g",
     "currentPrice": 120.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0038",
@@ -1232,7 +1232,7 @@
     "brand": "Banvit Kalçalı But ",
     "currentPrice": 242.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0043",
@@ -1258,7 +1258,7 @@
     "brand": "Pınar Hindi Sucuk",
     "currentPrice": 112.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0045",
@@ -1271,7 +1271,7 @@
     "brand": "Namet Kangal Sucuk",
     "currentPrice": 399.99,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0046",
@@ -1297,7 +1297,7 @@
     "brand": "Çoşkun 15'li",
     "currentPrice": 213.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0048",
@@ -1310,7 +1310,7 @@
     "brand": "CityFarm 10'lu",
     "currentPrice": 177.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0049",
@@ -1323,7 +1323,7 @@
     "brand": "Dardanel 80g",
     "currentPrice": 204.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0050",
@@ -1362,7 +1362,7 @@
     "brand": "Başyazıcı Pastırma",
     "currentPrice": 199.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0053",
@@ -1375,7 +1375,7 @@
     "brand": "Polonez Pastırma",
     "currentPrice": 338.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0054",
@@ -1414,7 +1414,7 @@
     "brand": "Polonez",
     "currentPrice": 338.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0057",
@@ -1453,7 +1453,7 @@
     "brand": "Carrefour Bio 10'lu",
     "currentPrice": 162.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0060",
@@ -1466,7 +1466,7 @@
     "brand": "Carrefour 160g",
     "currentPrice": 79.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0061",
@@ -1479,7 +1479,7 @@
     "brand": "Carrefour 3x80g",
     "currentPrice": 132.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0001",
@@ -1518,7 +1518,7 @@
     "brand": "Nimet 550g",
     "currentPrice": 47.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0004",
@@ -1531,7 +1531,7 @@
     "brand": "Nimet Kepekli",
     "currentPrice": 57.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0005",
@@ -1557,7 +1557,7 @@
     "brand": "Alberto Lavaş",
     "currentPrice": 75.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0007",
@@ -1570,7 +1570,7 @@
     "brand": "Unlüx Lavaş",
     "currentPrice": 47.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0008",
@@ -1596,7 +1596,7 @@
     "brand": "Uno 550g",
     "currentPrice": 69.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0010",
@@ -1609,7 +1609,7 @@
     "brand": "Nimet 350g",
     "currentPrice": 57.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0011",
@@ -1661,7 +1661,7 @@
     "brand": "Uno 350g ",
     "currentPrice": 45.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0015",
@@ -1674,7 +1674,7 @@
     "brand": "Uno Çavdarlı 550g",
     "currentPrice": 81.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0016",
@@ -1726,7 +1726,7 @@
     "brand": "İyilik 670g",
     "currentPrice": 56.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0020",
@@ -1739,7 +1739,7 @@
     "brand": "Uno 350g",
     "currentPrice": 71.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0021",
@@ -1752,7 +1752,7 @@
     "brand": "Uno Çavdarklı 550g",
     "currentPrice": 82.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0022",
@@ -1804,7 +1804,7 @@
     "brand": "Uno Süper Çavdarlı 550g",
     "currentPrice": 85.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0001",
@@ -1830,7 +1830,7 @@
     "brand": "Elidor 330ml",
     "currentPrice": 182.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0003",
@@ -1843,7 +1843,7 @@
     "brand": "Colgate",
     "currentPrice": 141.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0004",
@@ -1856,7 +1856,7 @@
     "brand": "Sensodyne",
     "currentPrice": 191.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0005",
@@ -1882,7 +1882,7 @@
     "brand": "Blendax 400ml",
     "currentPrice": 160.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0007",
@@ -1895,7 +1895,7 @@
     "brand": "Head&Shoulders 330ml",
     "currentPrice": 215.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0008",
@@ -1908,7 +1908,7 @@
     "brand": "Colgate",
     "currentPrice": 94.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0009",
@@ -1921,7 +1921,7 @@
     "brand": "Sensodyne",
     "currentPrice": 191.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0010",
@@ -1934,7 +1934,7 @@
     "brand": "Scarlet Normal 20'li",
     "currentPrice": 52.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0011",
@@ -1960,7 +1960,7 @@
     "brand": "Blendax 400ml",
     "currentPrice": 160.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0013",
@@ -1973,7 +1973,7 @@
     "brand": "İpek 330ml",
     "currentPrice": 56.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0014",
@@ -1999,7 +1999,7 @@
     "brand": "Sensodyne",
     "currentPrice": 193.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0016",
@@ -2038,7 +2038,7 @@
     "brand": "Kotex Normal 14'lü",
     "currentPrice": 202.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0019",
@@ -2051,7 +2051,7 @@
     "brand": "Kotex Gece 7'li",
     "currentPrice": 99.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0020",
@@ -2064,7 +2064,7 @@
     "brand": "Molped Normal 14'lü",
     "currentPrice": 180.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0021",
@@ -2077,7 +2077,7 @@
     "brand": "Dalin Klasik 330ml",
     "currentPrice": 173.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0022",
@@ -2090,7 +2090,7 @@
     "brand": "Elidor 650ml",
     "currentPrice": 282.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0023",
@@ -2129,7 +2129,7 @@
     "brand": "Sensodyne",
     "currentPrice": 229.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0026",
@@ -2155,7 +2155,7 @@
     "brand": "Migros Normal 14'lü",
     "currentPrice": 57.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0028",
@@ -2181,7 +2181,7 @@
     "brand": "Dalin Klasik 500ml",
     "currentPrice": 292.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0030",
@@ -2194,7 +2194,7 @@
     "brand": "Old Spice 400ml",
     "currentPrice": 171.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0031",
@@ -2272,7 +2272,7 @@
     "brand": "Mistral 16'lı",
     "currentPrice": 117.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0003",
@@ -2285,7 +2285,7 @@
     "brand": "ABC Renkli 3L ",
     "currentPrice": 255.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0004",
@@ -2298,7 +2298,7 @@
     "brand": "Perwoll 3L ",
     "currentPrice": 388.9,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0005",
@@ -2311,7 +2311,7 @@
     "brand": "Fairy 1L ",
     "currentPrice": 77.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0006",
@@ -2324,7 +2324,7 @@
     "brand": "Pril 1L ",
     "currentPrice": 99.9,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0007",
@@ -2337,7 +2337,7 @@
     "brand": "Familia 48'li",
     "currentPrice": 360.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0008",
@@ -2350,7 +2350,7 @@
     "brand": "Solo 48'li",
     "currentPrice": 350.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0009",
@@ -2363,7 +2363,7 @@
     "brand": "Peros Siyahlar 1L",
     "currentPrice": 88.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0010",
@@ -2376,7 +2376,7 @@
     "brand": "ABC 5L",
     "currentPrice": 190.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0011",
@@ -2402,7 +2402,7 @@
     "brand": "Desto 1L ",
     "currentPrice": 58.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0013",
@@ -2441,7 +2441,7 @@
     "brand": "Familia 16'lı",
     "currentPrice": 252.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0016",
@@ -2454,7 +2454,7 @@
     "brand": "Comfort 16'lı",
     "currentPrice": 104.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0017",
@@ -2480,7 +2480,7 @@
     "brand": "Bingo 2L",
     "currentPrice": 162.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0019",
@@ -2493,7 +2493,7 @@
     "brand": "Mis 1L",
     "currentPrice": 73.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0020",
@@ -2506,7 +2506,7 @@
     "brand": "Fairy 1L ",
     "currentPrice": 127.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0021",
@@ -2519,7 +2519,7 @@
     "brand": "Solo 16'lı",
     "currentPrice": 185.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0022",
@@ -2532,7 +2532,7 @@
     "brand": "Selpak 16'lı",
     "currentPrice": 350.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0023",
@@ -2571,7 +2571,7 @@
     "brand": "Bingo 2L ",
     "currentPrice": 278.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0026",
@@ -2623,7 +2623,7 @@
     "brand": "Carefour 16'lı ",
     "currentPrice": 120.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0030",
@@ -2636,7 +2636,7 @@
     "brand": "Solo Bambu 32'li",
     "currentPrice": 270.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0031",
@@ -2688,7 +2688,7 @@
     "brand": "Fairy 1L ",
     "currentPrice": 101.45,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0035",
@@ -2714,7 +2714,7 @@
     "brand": "Samba Klasik",
     "currentPrice": 48.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0002",
@@ -2727,7 +2727,7 @@
     "brand": "Lays Klasik",
     "currentPrice": 75.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0003",
@@ -2740,7 +2740,7 @@
     "brand": "Doritos Hot Corn",
     "currentPrice": 64.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0004",
@@ -2753,7 +2753,7 @@
     "brand": "Coca Cola 1.5L",
     "currentPrice": 78.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0005",
@@ -2766,7 +2766,7 @@
     "brand": "Coca Cola 330ml",
     "currentPrice": 41.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0006",
@@ -2779,7 +2779,7 @@
     "brand": "Coca Cola Zero 1.5L",
     "currentPrice": 78.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0007",
@@ -2792,7 +2792,7 @@
     "brand": "Sırma 0.5L",
     "currentPrice": 5.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0008",
@@ -2805,7 +2805,7 @@
     "brand": "A101 Su 5L ",
     "currentPrice": 34.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0009",
@@ -2818,7 +2818,7 @@
     "brand": "Hayat 5L ",
     "currentPrice": 56.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0010",
@@ -2831,7 +2831,7 @@
     "brand": "Beypazarı",
     "currentPrice": 11.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0011",
@@ -2844,7 +2844,7 @@
     "brand": "Sırma",
     "currentPrice": 24.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0012",
@@ -2857,7 +2857,7 @@
     "brand": "Kızılay",
     "currentPrice": 57.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0013",
@@ -2870,7 +2870,7 @@
     "brand": "Eti Karam Gurme",
     "currentPrice": 34.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0014",
@@ -2883,7 +2883,7 @@
     "brand": "Godiva Sütlü",
     "currentPrice": 73.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0015",
@@ -2896,7 +2896,7 @@
     "brand": "Toblerone Sütlü",
     "currentPrice": 86.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0016",
@@ -2922,7 +2922,7 @@
     "brand": "Patito Tuz&Sirke",
     "currentPrice": 41.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0018",
@@ -2935,7 +2935,7 @@
     "brand": "Doritos Nacho",
     "currentPrice": 64.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0019",
@@ -2948,7 +2948,7 @@
     "brand": "Pepsi 1.5L",
     "currentPrice": 75.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0020",
@@ -2961,7 +2961,7 @@
     "brand": "Le Cola 330ml",
     "currentPrice": 15.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0021",
@@ -2974,7 +2974,7 @@
     "brand": "Erikli 0.5L ",
     "currentPrice": 11.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0022",
@@ -2987,7 +2987,7 @@
     "brand": "Erikli 1.5L ",
     "currentPrice": 23.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0023",
@@ -3000,7 +3000,7 @@
     "brand": "Bim Maden Suyu",
     "currentPrice": 11.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0024",
@@ -3013,7 +3013,7 @@
     "brand": "Beypazarı",
     "currentPrice": 11.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0025",
@@ -3026,7 +3026,7 @@
     "brand": "Toblerone Sütlü",
     "currentPrice": 86.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0026",
@@ -3039,7 +3039,7 @@
     "brand": "Ülker Laviva",
     "currentPrice": 31.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0027",
@@ -3052,7 +3052,7 @@
     "brand": "Cornetto Disc",
     "currentPrice": 86.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0028",
@@ -3078,7 +3078,7 @@
     "brand": "Amigo Nacho",
     "currentPrice": 38.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0030",
@@ -3091,7 +3091,7 @@
     "brand": "Doritos Hot Corn",
     "currentPrice": 70.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0031",
@@ -3130,7 +3130,7 @@
     "brand": "Coca Cola 330ml",
     "currentPrice": 30.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0034",
@@ -3143,7 +3143,7 @@
     "brand": "Saka 5L ",
     "currentPrice": 50.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0035",
@@ -3156,7 +3156,7 @@
     "brand": "Saka 0.5L",
     "currentPrice": 15.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0036",
@@ -3169,7 +3169,7 @@
     "brand": "Kardelen 0.5L ",
     "currentPrice": 5.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0037",
@@ -3182,7 +3182,7 @@
     "brand": "Beypazarı 6'lı",
     "currentPrice": 57.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0038",
@@ -3195,7 +3195,7 @@
     "brand": "Beypazarı",
     "currentPrice": 11.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0039",
@@ -3208,7 +3208,7 @@
     "brand": "Kızılay 6'lı",
     "currentPrice": 57.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0040",
@@ -3221,7 +3221,7 @@
     "brand": "Godiva Sütlü",
     "currentPrice": 126.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0041",
@@ -3234,7 +3234,7 @@
     "brand": "Ülker Sütlü",
     "currentPrice": 80.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0042",
@@ -3247,7 +3247,7 @@
     "brand": "Ülker Laviva",
     "currentPrice": 32.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0043",
@@ -3273,7 +3273,7 @@
     "brand": "Lays Klasik",
     "currentPrice": 78.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0045",
@@ -3286,7 +3286,7 @@
     "brand": "Doritos Klasik",
     "currentPrice": 82.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0046",
@@ -3312,7 +3312,7 @@
     "brand": "Coca Cola Zero 1L ",
     "currentPrice": 56.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0048",
@@ -3325,7 +3325,7 @@
     "brand": "Pepsi Zero 330ml",
     "currentPrice": 48.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0049",
@@ -3338,7 +3338,7 @@
     "brand": "Erikli1.5L ",
     "currentPrice": 47.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0050",
@@ -3351,7 +3351,7 @@
     "brand": "Damla 1.5L",
     "currentPrice": 38.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0051",
@@ -3364,7 +3364,7 @@
     "brand": "Damla",
     "currentPrice": 46.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0052",
@@ -3377,7 +3377,7 @@
     "brand": "Uludağ 6'lı ",
     "currentPrice": 73.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0053",
@@ -3390,7 +3390,7 @@
     "brand": "Sırma",
     "currentPrice": 15.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0054",
@@ -3403,7 +3403,7 @@
     "brand": "Eti Karam Gurme",
     "currentPrice": 27.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0055",
@@ -3429,7 +3429,7 @@
     "brand": "Toblerone Sütlü",
     "currentPrice": 67.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0057",
@@ -3442,7 +3442,7 @@
     "brand": "Master Soğanlı",
     "currentPrice": 46.8,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0058",
@@ -3468,7 +3468,7 @@
     "brand": "Aly Nachos",
     "currentPrice": 146.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0060",
@@ -3481,7 +3481,7 @@
     "brand": "Coca Cola 330ml",
     "currentPrice": 50.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0061",
@@ -3494,7 +3494,7 @@
     "brand": "Coca Cola 1L ",
     "currentPrice": 66.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0062",
@@ -3507,7 +3507,7 @@
     "brand": "Pepsi 1L ",
     "currentPrice": 68.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0063",
@@ -3520,7 +3520,7 @@
     "brand": "Carrefour 0.5L",
     "currentPrice": 12.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0064",
@@ -3533,7 +3533,7 @@
     "brand": "Hayat 0.5L",
     "currentPrice": 19.5,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0065",
@@ -3546,7 +3546,7 @@
     "brand": "Erikli 1.5L",
     "currentPrice": 38.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0066",
@@ -3559,7 +3559,7 @@
     "brand": "Uludağ ",
     "currentPrice": 48.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0067",
@@ -3572,7 +3572,7 @@
     "brand": "Sırma",
     "currentPrice": 50.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0068",
@@ -3585,7 +3585,7 @@
     "brand": "Kızılay 6'lı",
     "currentPrice": 57.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0069",
@@ -3598,7 +3598,7 @@
     "brand": "Ülker Laviva",
     "currentPrice": 38.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0070",
@@ -3611,7 +3611,7 @@
     "brand": "Cornetto Disc",
     "currentPrice": 86.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0001",
@@ -3624,7 +3624,7 @@
     "brand": "Ankara Burgu",
     "currentPrice": 28.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0002",
@@ -3637,7 +3637,7 @@
     "brand": "Ankara Spagetti",
     "currentPrice": 28.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0003",
@@ -3650,7 +3650,7 @@
     "brand": "Söke 1kg",
     "currentPrice": 52.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0004",
@@ -3663,7 +3663,7 @@
     "brand": "Sinangil Glutensiz",
     "currentPrice": 66.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0005",
@@ -3689,7 +3689,7 @@
     "brand": "Ovadan 1.5kg",
     "currentPrice": 60.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0007",
@@ -3702,7 +3702,7 @@
     "brand": "Yayla 1.5kg",
     "currentPrice": 77.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0008",
@@ -3715,7 +3715,7 @@
     "brand": "Reis Baldo 2.5kg",
     "currentPrice": 152.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0009",
@@ -3728,7 +3728,7 @@
     "brand": "Zeo Zeytinyağı 2L",
     "currentPrice": 545.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0010",
@@ -3741,7 +3741,7 @@
     "brand": "Yudum Zeytinyağı 1L",
     "currentPrice": 320.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0011",
@@ -3754,7 +3754,7 @@
     "brand": "Vera Ayçiçek Yağı 1L",
     "currentPrice": 115.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0012",
@@ -3767,7 +3767,7 @@
     "brand": "Ankara Burgu",
     "currentPrice": 33.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0013",
@@ -3780,7 +3780,7 @@
     "brand": "Barilla Spagetti",
     "currentPrice": 44.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0014",
@@ -3793,7 +3793,7 @@
     "brand": "Söke Glutensiz 1kg",
     "currentPrice": 35.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0015",
@@ -3806,7 +3806,7 @@
     "brand": "Sinangil 5kg",
     "currentPrice": 140.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0016",
@@ -3832,7 +3832,7 @@
     "brand": "Efsane 1.5 kg",
     "currentPrice": 62.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0018",
@@ -3845,7 +3845,7 @@
     "brand": "Efsane 1kg",
     "currentPrice": 30.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0019",
@@ -3858,7 +3858,7 @@
     "brand": "Komili Zeytinyağı 1L",
     "currentPrice": 306.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0020",
@@ -3871,7 +3871,7 @@
     "brand": "Sırım Zeytinyağı 1L ",
     "currentPrice": 265.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0021",
@@ -3884,7 +3884,7 @@
     "brand": "Sole Ayçiçek Yağı 2L",
     "currentPrice": 216.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0022",
@@ -3897,7 +3897,7 @@
     "brand": "Barilla Spagetti",
     "currentPrice": 60.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0023",
@@ -3910,7 +3910,7 @@
     "brand": "Filiz",
     "currentPrice": 34.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0024",
@@ -3923,7 +3923,7 @@
     "brand": "Barilla Burgu",
     "currentPrice": 60.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0025",
@@ -3936,7 +3936,7 @@
     "brand": "Piyale 1kg",
     "currentPrice": 35.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0026",
@@ -3962,7 +3962,7 @@
     "brand": "Anadolu 1kg",
     "currentPrice": 38.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0028",
@@ -3988,7 +3988,7 @@
     "brand": "Lio Riviera Zeytinyağı 1L",
     "currentPrice": 330.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0030",
@@ -4001,7 +4001,7 @@
     "brand": "Lio Zeytinyağı 2L ",
     "currentPrice": 545.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0031",
@@ -4014,7 +4014,7 @@
     "brand": "Evin Ayçiçek Yağı 1L ",
     "currentPrice": 115.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0032",
@@ -4027,7 +4027,7 @@
     "brand": "Ankara Burgu",
     "currentPrice": 35.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0033",
@@ -4040,7 +4040,7 @@
     "brand": "Barilla ",
     "currentPrice": 60.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0034",
@@ -4053,7 +4053,7 @@
     "brand": "Filiz",
     "currentPrice": 39.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0035",
@@ -4066,7 +4066,7 @@
     "brand": "Söke Tahıllı 1kg",
     "currentPrice": 52.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0036",
@@ -4079,7 +4079,7 @@
     "brand": "Söke 1kg",
     "currentPrice": 56.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0037",
@@ -4092,7 +4092,7 @@
     "brand": "Panpan 1kg",
     "currentPrice": 54.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0038",
@@ -4105,7 +4105,7 @@
     "brand": "Yayla 1kg",
     "currentPrice": 30.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0039",
@@ -4118,7 +4118,7 @@
     "brand": "Migros 1.5kg",
     "currentPrice": 61.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0040",
@@ -4131,7 +4131,7 @@
     "brand": "Reis Baldo 3.0kg",
     "currentPrice": 188.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0041",
@@ -4157,7 +4157,7 @@
     "brand": "Komili Ayçiçek Yağı 1L",
     "currentPrice": 190.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0043",
@@ -4183,7 +4183,7 @@
     "brand": "Ankara Burgu",
     "currentPrice": 25.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0045",
@@ -4196,7 +4196,7 @@
     "brand": "Barilla Burgu",
     "currentPrice": 44.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0046",
@@ -4222,7 +4222,7 @@
     "brand": "Sinangil 1kg ",
     "currentPrice": 55.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0048",
@@ -4235,7 +4235,7 @@
     "brand": "Sinangil 2kg",
     "currentPrice": 102.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0049",
@@ -4248,7 +4248,7 @@
     "brand": "Carrefour 5kg",
     "currentPrice": 135.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0050",
@@ -4261,7 +4261,7 @@
     "brand": "Carrefour 1kg",
     "currentPrice": 33.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0051",
@@ -4287,7 +4287,7 @@
     "brand": "Efsane 1kg",
     "currentPrice": 33.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0053",
@@ -4300,7 +4300,7 @@
     "brand": "Komili Zeytinyağı 0.5L",
     "currentPrice": 222.0,
     "discountedPrice": null,
-    "availabilityTag": "HIGH"
+    "availabilityTag": "MEDIUM"
   },
   {
     "stockItemId": "SI0054",
