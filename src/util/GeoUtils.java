@@ -1,70 +1,58 @@
-package test;
-
-import util.GeoUtils;
+package util;
 
 /**
- * GeoUtilsTest
- * Haversine mesafe hesabinin temel testleri.
+ * GeoUtils
+ * Iki koordinat arasi mesafe ve yurume suresi hesaplar.
+ * Haversine formulunu kullanir (dunyanin yuvarlakligini hesaba katar).
  */
-public class GeoUtilsTest {
+public class GeoUtils {
 
-    // ================= TEST RUNNER =================
+    // dunya yaricapi (km)
+    private static final double EARTH_RADIUS = 6371.0;
 
-    public static void main(String[] args) {
-        System.out.println("=== GeoUtils Testleri ===\n");
+    // ortalama yurume hizi (km/h)
+    private static final double WALKING_SPEED = 5.0;
 
-        testHaversineBasic();
-        testHaversineSamePoint();
-        testWalkingTime();
-        testTotalDistance();
+    // ================= HAVERSINE =================
 
-        System.out.println("\nTum testler tamamlandi.");
+    /**
+     * Iki koordinat arasi kus ucusu mesafe (km).
+     * lat/lng derece cinsinden verilir.
+     */
+    public static double haversine(double lat1, double lon1, double lat2, double lon2) {
+
+        double dLat = Math.toRadians(lat2 - lat1);
+        double dLon = Math.toRadians(lon2 - lon1);
+
+        double radLat1 = Math.toRadians(lat1);
+        double radLat2 = Math.toRadians(lat2);
+
+        double a = Math.sin(dLat / 2) * Math.sin(dLat / 2)
+                 + Math.cos(radLat1) * Math.cos(radLat2)
+                 * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+        return EARTH_RADIUS * c;
     }
 
-    // ================= HAVERSINE TESTLERI =================
+    // ================= YURUME SURESI =================
 
-    private static void testHaversineBasic() {
-        double dist = GeoUtils.haversine(40.9762, 29.1459, 40.9835, 29.1462);
+    /**
+     * Mesafeyi (km) dakika cinsinden yurume suresine cevirir.
+     * Ortalama 5 km/h yurume hizi kullanir.
+     */
+    public static double walkingTime(double distanceKm) {
+        if (distanceKm <= 0) return 0.0;
 
-        boolean passed = (dist > 0.7 && dist < 0.9);
-
-        System.out.println("[testHaversineBasic] mesafe = " +
-                Math.round(dist * 1000.0) / 1000.0 + " km -> " +
-                (passed ? "PASSED" : "FAILED"));
+        return (distanceKm / WALKING_SPEED) * 60.0;
     }
 
-    private static void testHaversineSamePoint() {
-        double dist = GeoUtils.haversine(40.9762, 29.1459, 40.9762, 29.1459);
+    // ================= TOPLAM MESAFE =================
 
-        boolean passed = (dist == 0.0);
-
-        System.out.println("[testHaversineSamePoint] mesafe = " + dist +
-                " km -> " + (passed ? "PASSED" : "FAILED"));
-    }
-
-    // ================= YURUME SURESI TESTI =================
-
-    private static void testWalkingTime() {
-        double time = GeoUtils.walkingTime(1.0);
-
-        boolean passed = (time == 12.0);
-
-        System.out.println("[testWalkingTime] 1 km = " + time +
-                " dk -> " + (passed ? "PASSED" : "FAILED"));
-    }
-
-    // ================= TOPLAM MESAFE TESTI =================
-
-    private static void testTotalDistance() {
-        double[] lats = {40.9755, 40.9762, 40.9835};
-        double[] lons = {29.1498, 29.1459, 29.1462};
-
-        double total = GeoUtils.totalDistance(lats, lons);
-
-        boolean passed = (total > 0.0);
-
-        System.out.println("[testTotalDistance] toplam = " +
-                Math.round(total * 1000.0) / 1000.0 + " km -> " +
-                (passed ? "PASSED" : "FAILED"));
-    }
-}
+    /**
+     * Birden fazla nokta arasindaki toplam mesafeyi hesaplar.
+     * lats ve lons dizileri ayni uzunlukta olmali.
+     * Sirali olarak her nokta arasini toplar.
+     */
+    public static double totalDistance(double[] lats, double[] lons) {
