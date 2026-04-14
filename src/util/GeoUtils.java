@@ -56,3 +56,16 @@ public class GeoUtils {
      * Sirali olarak her nokta arasini toplar.
      */
     public static double totalDistance(double[] lats, double[] lons) {
+        if (lats == null || lons == null) return 0.0;
+        if (lats.length != lons.length) return 0.0;
+        if (lats.length < 2) return 0.0;
+
+        double total = 0.0;
+
+        for (int i = 0; i < lats.length - 1; i++) {
+            total += haversine(lats[i], lons[i], lats[i + 1], lons[i + 1]);
+        }
+
+        return total;
+    }
+}
