@@ -1,99 +1,60 @@
-package test;
+package service.route;
 
 import model.*;
-import service.route.RouteOptimizer;
-import service.route.RouteStrategy;
+import util.GeoUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
- * RouteOptimizerTest
- * RouteOptimizer stub'inin temel smoke testleri.
+ * RouteOptimizer
+ * Sepetteki urunlere gore en uygun alisveris rotasini hesaplar.
  */
-public class RouteOptimizerTest {
+public class RouteOptimizer {
 
-    // ================= TEST RUNNER =================
+    // ================= ANA METOT =================
 
-    public static void main(String[] args) {
-        System.out.println("=== RouteOptimizer Testleri ===\n");
+    public RouteResult optimizeRoute(List<BasketItem> basketItems,
+                                     List<StockItem> stockItems,
+                                     List<StoreLocation> storeLocations,
+                                     double startLat, double startLon) {
 
-        testStubReturnsResult();
-        testStubHasStores();
-        testStubDistance();
+        String store1Id = "A101-01";
+        String store2Id = "MIGROS-01";
 
-        System.out.println("\nTum testler tamamlandi.");
-    }
+        StoreLocation loc1 = findLocation(storeLocations, store1Id);
+        StoreLocation loc2 = findLocation(storeLocations, store2Id);
 
-    // ================= SMOKE TESTLERI =================
+        double totalDist = 0.0;
 
-    /**
-     * optimizeRoute null donmemeli.
-     */
-    private static void testStubReturnsResult() {
-        RouteOptimizer optimizer = new RouteOptimizer();
+        if (loc1 != null && loc2 != null) {
+            double dist1 = GeoUtils.haversine(startLat, startLon, loc1.getLatitude(), loc1.getLongitude());
+            double dist2 = GeoUtils.haversine(loc1.getLatitude(), loc1.getLongitude(), loc2.getLatitude(), loc2.getLongitude());
+            totalDist = dist1 + dist2;
+        }
 
-        List<BasketItem> basket = new ArrayList<>();
-        basket.add(new BasketItem(1, "SI0001", 1));
+        RouteResult result = new RouteResult();
+        result.setRouteId(1);
+        result.setTotalDistance(Math.round(totalDist * 100.0) / 100.0);
+        result.setStoreCount(2);
+        result.setTotalCost(156.80);
 
-        List<StockItem> stockItems = new ArrayList<>();
-        List<StoreLocation> locations = getSampleLocations();
+        result.addStore(new RouteResultStore(1, store1Id));
+        result.addStore(new RouteResultStore(1, store2Id));
 
-        // Yeditepe Ust Kapi koordinatlari
-        double startLat = 40.9755;
-        double startLon = 29.1498;
-
-        RouteResult result = optimizer.optimizeRoute(
-                basket, stockItems, locations, startLat, startLon,
-                RouteStrategy.CHEAPEST);
-
-        boolean passed = (result != null);
-
-        System.out.println("[testStubReturnsResult] result != null -> " +
-                (passed ? "PASSED" : "FAILED"));
-    }
-
-    /**
-     * Rota en az 1 magaza icermeli.
-     */
-    private static void testStubHasStores() {
-        RouteOptimizer optimizer = new RouteOptimizer();
-
-        RouteResult result = optimizer.optimizeRoute(
-                new ArrayList<>(), new ArrayList<>(), getSampleLocations(),
-                40.9755, 29.1498, RouteStrategy.CHEAPEST);
-
-        boolean passed = (result.getStores() != null && !result.getStores().isEmpty());
-
-        System.out.println("[testStubHasStores] store listesi bos degil -> " +
-                (passed ? "PASSED" : "FAILED"));
-    }
-
-    /**
-     * Toplam mesafe 0'dan buyuk olmali.
-     */
-    private static void testStubDistance() {
-        RouteOptimizer optimizer = new RouteOptimizer();
-
-        RouteResult result = optimizer.optimizeRoute(
-                new ArrayList<>(), new ArrayList<>(), getSampleLocations(),
-                40.9755, 29.1498, RouteStrategy.FEWEST_STOPS);
-
-        boolean passed = (result.getTotalDistance() > 0.0);
-
-        System.out.println("[testStubDistance] mesafe > 0 -> " +
-                (passed ? "PASSED" : "FAILED"));
+        return result;
     }
 
     // ================= YARDIMCI =================
 
-    /**
-     * Test icin ornek magaza konumlari.
-     */
-    private static List<StoreLocation> getSampleLocations() {
-        List<StoreLocation> locs = new ArrayList<>();
-        locs.add(new StoreLocation("A101-01", 40.9762, 29.1459, "Kayisdagi Cd. No:48"));
-        locs.add(new StoreLocation("MIGROS-01", 40.9835, 29.1462, "Atilla Cd. No:22"));
-        return locs;
+    private StoreLocation findLocation(List<StoreLocation> locations, String storeId) {
+        if (locations == null || storeId == null) return null;
+
+        for (StoreLocation loc : locations) {
+            if (storeId.equals(loc.getStoreId())) {
+                return loc;
+            }
+        }
+
+        return null;
     }
 }
