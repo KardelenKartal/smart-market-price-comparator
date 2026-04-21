@@ -1,4 +1,3 @@
-package util;
 
 /**
  * GeoUtils
