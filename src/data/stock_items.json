@@ -689,7 +689,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0001",
+    "stockItemId": "SI0054",
     "productId": "P006",
     "productName": "BEEF",
     "categoryId": "CAT02",
@@ -702,7 +702,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0002",
+    "stockItemId": "SI0055",
     "productId": "P006",
     "productName": "BEEF",
     "categoryId": "CAT02",
@@ -715,7 +715,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0003",
+    "stockItemId": "SI0056",
     "productId": "P007",
     "productName": "CHICKEN",
     "categoryId": "CAT02",
@@ -728,7 +728,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0004",
+    "stockItemId": "SI0057",
     "productId": "P007",
     "productName": "CHICKEN",
     "categoryId": "CAT02",
@@ -741,7 +741,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0005",
+    "stockItemId": "SI0058",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -754,7 +754,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0006",
+    "stockItemId": "SI0059",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -767,7 +767,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0007",
+    "stockItemId": "SI0060",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -780,7 +780,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0008",
+    "stockItemId": "SI0061",
     "productId": "P009",
     "productName": "EGGS",
     "categoryId": "CAT02",
@@ -793,7 +793,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0009",
+    "stockItemId": "SI0062",
     "productId": "P009",
     "productName": "EGGS",
     "categoryId": "CAT02",
@@ -806,7 +806,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0010",
+    "stockItemId": "SI0063",
     "productId": "P009",
     "productName": "EGGS",
     "categoryId": "CAT02",
@@ -819,7 +819,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0011",
+    "stockItemId": "SI0064",
     "productId": "P010",
     "productName": "TUNA",
     "categoryId": "CAT02",
@@ -832,7 +832,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0012",
+    "stockItemId": "SI0065",
     "productId": "P010",
     "productName": "TUNA",
     "categoryId": "CAT02",
@@ -845,7 +845,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0013",
+    "stockItemId": "SI0066",
     "productId": "P010",
     "productName": "TUNA",
     "categoryId": "CAT02",
@@ -858,7 +858,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0014",
+    "stockItemId": "SI0067",
     "productId": "P006",
     "productName": "BEEF",
     "categoryId": "CAT02",
@@ -871,7 +871,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0015",
+    "stockItemId": "SI0068",
     "productId": "P006",
     "productName": "BEEF",
     "categoryId": "CAT02",
@@ -884,7 +884,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0016",
+    "stockItemId": "SI0069",
     "productId": "P007",
     "productName": "CHICKEN",
     "categoryId": "CAT02",
@@ -897,7 +897,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0017",
+    "stockItemId": "SI0070",
     "productId": "P007",
     "productName": "CHICKEN",
     "categoryId": "CAT02",
@@ -910,7 +910,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0018",
+    "stockItemId": "SI0071",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -923,7 +923,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0019",
+    "stockItemId": "SI0072",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -936,7 +936,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0020",
+    "stockItemId": "SI0073",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -949,7 +949,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0021",
+    "stockItemId": "SI0074",
     "productId": "P009",
     "productName": "EGGS",
     "categoryId": "CAT02",
@@ -962,7 +962,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0022",
+    "stockItemId": "SI0075",
     "productId": "P009",
     "productName": "EGGS",
     "categoryId": "CAT02",
@@ -975,7 +975,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0023",
+    "stockItemId": "SI0076",
     "productId": "P010",
     "productName": "TUNA",
     "categoryId": "CAT02",
@@ -988,7 +988,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0024",
+    "stockItemId": "SI0077",
     "productId": "P010",
     "productName": "TUNA",
     "categoryId": "CAT02",
@@ -1001,7 +1001,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0025",
+    "stockItemId": "SI0078",
     "productId": "P010",
     "productName": "TUNA",
     "categoryId": "CAT02",
@@ -1014,7 +1014,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0026",
+    "stockItemId": "SI0079",
     "productId": "P006",
     "productName": "BEEF",
     "categoryId": "CAT02",
@@ -1027,7 +1027,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0027",
+    "stockItemId": "SI0080",
     "productId": "P006",
     "productName": "BEEF",
     "categoryId": "CAT02",
@@ -1040,7 +1040,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0028",
+    "stockItemId": "SI0081",
     "productId": "P006",
     "productName": "BEEF",
     "categoryId": "CAT02",
@@ -1053,7 +1053,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0029",
+    "stockItemId": "SI0082",
     "productId": "P007",
     "productName": "CHICKEN",
     "categoryId": "CAT02",
@@ -1066,7 +1066,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0030",
+    "stockItemId": "SI0083",
     "productId": "P007",
     "productName": "CHICKEN",
     "categoryId": "CAT02",
@@ -1079,7 +1079,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0031",
+    "stockItemId": "SI0084",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -1092,7 +1092,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0032",
+    "stockItemId": "SI0085",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -1105,7 +1105,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0033",
+    "stockItemId": "SI0086",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -1118,7 +1118,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0034",
+    "stockItemId": "SI0087",
     "productId": "P009",
     "productName": "EGGS",
     "categoryId": "CAT02",
@@ -1131,7 +1131,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0035",
+    "stockItemId": "SI0088",
     "productId": "P009",
     "productName": "EGGS",
     "categoryId": "CAT02",
@@ -1144,7 +1144,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0036",
+    "stockItemId": "SI0089",
     "productId": "P010",
     "productName": "TUNA",
     "categoryId": "CAT02",
@@ -1157,7 +1157,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0037",
+    "stockItemId": "SI0090",
     "productId": "P010",
     "productName": "TUNA",
     "categoryId": "CAT02",
@@ -1170,7 +1170,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0038",
+    "stockItemId": "SI0091",
     "productId": "P006",
     "productName": "BEEF",
     "categoryId": "CAT02",
@@ -1183,7 +1183,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0039",
+    "stockItemId": "SI0092",
     "productId": "P006",
     "productName": "BEEF",
     "categoryId": "CAT02",
@@ -1196,7 +1196,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0040",
+    "stockItemId": "SI0093",
     "productId": "P006",
     "productName": "BEEF",
     "categoryId": "CAT02",
@@ -1209,7 +1209,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0041",
+    "stockItemId": "SI0094",
     "productId": "P007",
     "productName": "CHICKEN",
     "categoryId": "CAT02",
@@ -1222,7 +1222,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0042",
+    "stockItemId": "SI0095",
     "productId": "P007",
     "productName": "CHICKEN",
     "categoryId": "CAT02",
@@ -1235,7 +1235,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0043",
+    "stockItemId": "SI0096",
     "productId": "P007",
     "productName": "CHICKEN",
     "categoryId": "CAT02",
@@ -1248,7 +1248,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0044",
+    "stockItemId": "SI0097",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -1261,7 +1261,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0045",
+    "stockItemId": "SI0098",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -1274,7 +1274,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0046",
+    "stockItemId": "SI0099",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -1287,7 +1287,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0047",
+    "stockItemId": "SI0100",
     "productId": "P009",
     "productName": "EGGS",
     "categoryId": "CAT02",
@@ -1300,7 +1300,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0048",
+    "stockItemId": "SI0101",
     "productId": "P009",
     "productName": "EGGS",
     "categoryId": "CAT02",
@@ -1313,7 +1313,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0049",
+    "stockItemId": "SI0102",
     "productId": "P010",
     "productName": "TUNA",
     "categoryId": "CAT02",
@@ -1326,7 +1326,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0050",
+    "stockItemId": "SI0103",
     "productId": "P010",
     "productName": "TUNA",
     "categoryId": "CAT02",
@@ -1339,7 +1339,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0051",
+    "stockItemId": "SI0104",
     "productId": "P006",
     "productName": "BEEF",
     "categoryId": "CAT02",
@@ -1352,7 +1352,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0052",
+    "stockItemId": "SI0105",
     "productId": "P006",
     "productName": "BEEF",
     "categoryId": "CAT02",
@@ -1365,7 +1365,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0053",
+    "stockItemId": "SI0106",
     "productId": "P006",
     "productName": "BEEF",
     "categoryId": "CAT02",
@@ -1378,7 +1378,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0054",
+    "stockItemId": "SI0107",
     "productId": "P007",
     "productName": "CHICKEN",
     "categoryId": "CAT02",
@@ -1391,7 +1391,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0055",
+    "stockItemId": "SI0108",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -1404,7 +1404,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0056",
+    "stockItemId": "SI0109",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -1417,7 +1417,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0057",
+    "stockItemId": "SI0110",
     "productId": "P008",
     "productName": "SAUSAGES",
     "categoryId": "CAT02",
@@ -1430,7 +1430,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0058",
+    "stockItemId": "SI0111",
     "productId": "P009",
     "productName": "EGGS",
     "categoryId": "CAT02",
@@ -1443,7 +1443,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0059",
+    "stockItemId": "SI0112",
     "productId": "P009",
     "productName": "EGGS",
     "categoryId": "CAT02",
@@ -1456,7 +1456,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0060",
+    "stockItemId": "SI0113",
     "productId": "P010",
     "productName": "TUNA",
     "categoryId": "CAT02",
@@ -1469,7 +1469,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0061",
+    "stockItemId": "SI0114",
     "productId": "P010",
     "productName": "TUNA",
     "categoryId": "CAT02",
@@ -1482,7 +1482,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0001",
+    "stockItemId": "SI0115",
     "productId": "P011",
     "productName": "BREAD",
     "categoryId": "CAT03",
@@ -1495,7 +1495,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0002",
+    "stockItemId": "SI0116",
     "productId": "P011",
     "productName": "BREAD",
     "categoryId": "CAT03",
@@ -1508,7 +1508,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0003",
+    "stockItemId": "SI0117",
     "productId": "P012",
     "productName": "TOAST BREAD",
     "categoryId": "CAT03",
@@ -1521,7 +1521,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0004",
+    "stockItemId": "SI0118",
     "productId": "P012",
     "productName": "TOAST BREAD",
     "categoryId": "CAT03",
@@ -1534,7 +1534,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0005",
+    "stockItemId": "SI0119",
     "productId": "P012",
     "productName": "TOAST BREAD",
     "categoryId": "CAT03",
@@ -1547,7 +1547,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0006",
+    "stockItemId": "SI0120",
     "productId": "P011",
     "productName": "BREAD",
     "categoryId": "CAT03",
@@ -1560,7 +1560,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0007",
+    "stockItemId": "SI0121",
     "productId": "P011",
     "productName": "BREAD",
     "categoryId": "CAT03",
@@ -1573,7 +1573,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0008",
+    "stockItemId": "SI0122",
     "productId": "P012",
     "productName": "TOAST BREAD",
     "categoryId": "CAT03",
@@ -1586,7 +1586,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0009",
+    "stockItemId": "SI0123",
     "productId": "P012",
     "productName": "TOAST BREAD",
     "categoryId": "CAT03",
@@ -1599,7 +1599,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0010",
+    "stockItemId": "SI0124",
     "productId": "P012",
     "productName": "TOAST BREAD",
     "categoryId": "CAT03",
@@ -1612,7 +1612,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0011",
+    "stockItemId": "SI0125",
     "productId": "P011",
     "productName": "BREAD",
     "categoryId": "CAT03",
@@ -1625,7 +1625,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0012",
+    "stockItemId": "SI0126",
     "productId": "P011",
     "productName": "BREAD",
     "categoryId": "CAT03",
@@ -1638,7 +1638,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0013",
+    "stockItemId": "SI0127",
     "productId": "P011",
     "productName": "BREAD",
     "categoryId": "CAT03",
@@ -1651,7 +1651,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0014",
+    "stockItemId": "SI0128",
     "productId": "P012",
     "productName": "TOAST BREAD",
     "categoryId": "CAT03",
@@ -1664,7 +1664,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0015",
+    "stockItemId": "SI0129",
     "productId": "P012",
     "productName": "TOAST BREAD",
     "categoryId": "CAT03",
@@ -1677,7 +1677,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0016",
+    "stockItemId": "SI0130",
     "productId": "P012",
     "productName": "TOAST BREAD",
     "categoryId": "CAT03",
@@ -1690,7 +1690,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0017",
+    "stockItemId": "SI0131",
     "productId": "P011",
     "productName": "BREAD",
     "categoryId": "CAT03",
@@ -1703,7 +1703,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0018",
+    "stockItemId": "SI0132",
     "productId": "P011",
     "productName": "BREAD",
     "categoryId": "CAT03",
@@ -1716,7 +1716,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0019",
+    "stockItemId": "SI0133",
     "productId": "P012",
     "productName": "TOAST BREAD",
     "categoryId": "CAT03",
@@ -1729,7 +1729,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0020",
+    "stockItemId": "SI0134",
     "productId": "P012",
     "productName": "TOAST BREAD",
     "categoryId": "CAT03",
@@ -1742,7 +1742,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0021",
+    "stockItemId": "SI0135",
     "productId": "P012",
     "productName": "TOAST BREAD",
     "categoryId": "CAT03",
@@ -1755,7 +1755,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0022",
+    "stockItemId": "SI0136",
     "productId": "P011",
     "productName": "BREAD",
     "categoryId": "CAT03",
@@ -1768,7 +1768,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0023",
+    "stockItemId": "SI0137",
     "productId": "P011",
     "productName": "BREAD",
     "categoryId": "CAT03",
@@ -1781,7 +1781,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0024",
+    "stockItemId": "SI0138",
     "productId": "P012",
     "productName": "TOAST BREAD",
     "categoryId": "CAT03",
@@ -1794,7 +1794,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0025",
+    "stockItemId": "SI0139",
     "productId": "P012",
     "productName": "TOAST BREAD",
     "categoryId": "CAT03",
@@ -1807,7 +1807,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0001",
+    "stockItemId": "SI0140",
     "productId": "P013",
     "productName": "SHAMPOO",
     "categoryId": "CAT04",
@@ -1820,7 +1820,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0002",
+    "stockItemId": "SI0141",
     "productId": "P013",
     "productName": "SHAMPOO",
     "categoryId": "CAT04",
@@ -1833,7 +1833,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0003",
+    "stockItemId": "SI0142",
     "productId": "P014",
     "productName": "TOOTHPASTE",
     "categoryId": "CAT04",
@@ -1846,7 +1846,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0004",
+    "stockItemId": "SI0143",
     "productId": "P014",
     "productName": "TOOTHPASTE",
     "categoryId": "CAT04",
@@ -1859,7 +1859,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0005",
+    "stockItemId": "SI0144",
     "productId": "P015",
     "productName": "PERIOD PADS",
     "categoryId": "CAT04",
@@ -1872,7 +1872,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0006",
+    "stockItemId": "SI0145",
     "productId": "P013",
     "productName": "SHAMPOO",
     "categoryId": "CAT04",
@@ -1885,7 +1885,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0007",
+    "stockItemId": "SI0146",
     "productId": "P013",
     "productName": "SHAMPOO",
     "categoryId": "CAT04",
@@ -1898,7 +1898,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0008",
+    "stockItemId": "SI0147",
     "productId": "P014",
     "productName": "TOOTHPASTE",
     "categoryId": "CAT04",
@@ -1911,7 +1911,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0009",
+    "stockItemId": "SI0148",
     "productId": "P014",
     "productName": "TOOTHPASTE",
     "categoryId": "CAT04",
@@ -1924,7 +1924,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0010",
+    "stockItemId": "SI0149",
     "productId": "P015",
     "productName": "PERIOD PADS",
     "categoryId": "CAT04",
@@ -1937,7 +1937,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0011",
+    "stockItemId": "SI0150",
     "productId": "P015",
     "productName": "PERIOD PADS",
     "categoryId": "CAT04",
@@ -1950,7 +1950,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0012",
+    "stockItemId": "SI0151",
     "productId": "P013",
     "productName": "SHAMPOO",
     "categoryId": "CAT04",
@@ -1963,7 +1963,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0013",
+    "stockItemId": "SI0152",
     "productId": "P013",
     "productName": "SHAMPOO",
     "categoryId": "CAT04",
@@ -1976,7 +1976,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0014",
+    "stockItemId": "SI0153",
     "productId": "P013",
     "productName": "SHAMPOO",
     "categoryId": "CAT04",
@@ -1989,7 +1989,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0015",
+    "stockItemId": "SI0154",
     "productId": "P014",
     "productName": "TOOTHPASTE",
     "categoryId": "CAT04",
@@ -2002,7 +2002,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0016",
+    "stockItemId": "SI0155",
     "productId": "P014",
     "productName": "TOOTHPASTE",
     "categoryId": "CAT04",
@@ -2015,7 +2015,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0017",
+    "stockItemId": "SI0156",
     "productId": "P014",
     "productName": "TOOTHPASTE",
     "categoryId": "CAT04",
@@ -2028,7 +2028,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0018",
+    "stockItemId": "SI0157",
     "productId": "P015",
     "productName": "PERIOD PADS",
     "categoryId": "CAT04",
@@ -2041,7 +2041,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0019",
+    "stockItemId": "SI0158",
     "productId": "P015",
     "productName": "PERIOD PADS",
     "categoryId": "CAT04",
@@ -2054,7 +2054,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0020",
+    "stockItemId": "SI0159",
     "productId": "P015",
     "productName": "PERIOD PADS",
     "categoryId": "CAT04",
@@ -2067,7 +2067,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0021",
+    "stockItemId": "SI0160",
     "productId": "P013",
     "productName": "SHAMPOO",
     "categoryId": "CAT04",
@@ -2080,7 +2080,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0022",
+    "stockItemId": "SI0161",
     "productId": "P013",
     "productName": "SHAMPOO",
     "categoryId": "CAT04",
@@ -2093,7 +2093,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0023",
+    "stockItemId": "SI0162",
     "productId": "P013",
     "productName": "SHAMPOO",
     "categoryId": "CAT04",
@@ -2106,7 +2106,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0024",
+    "stockItemId": "SI0163",
     "productId": "P014",
     "productName": "TOOTHPASTE",
     "categoryId": "CAT04",
@@ -2119,7 +2119,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0025",
+    "stockItemId": "SI0164",
     "productId": "P014",
     "productName": "TOOTHPASTE",
     "categoryId": "CAT04",
@@ -2132,7 +2132,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0026",
+    "stockItemId": "SI0165",
     "productId": "P014",
     "productName": "TOOTHPASTE",
     "categoryId": "CAT04",
@@ -2145,7 +2145,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0027",
+    "stockItemId": "SI0166",
     "productId": "P015",
     "productName": "PERIOD PADS",
     "categoryId": "CAT04",
@@ -2158,7 +2158,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0028",
+    "stockItemId": "SI0167",
     "productId": "P015",
     "productName": "PERIOD PADS",
     "categoryId": "CAT04",
@@ -2171,7 +2171,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0029",
+    "stockItemId": "SI0168",
     "productId": "P013",
     "productName": "SHAMPOO",
     "categoryId": "CAT04",
@@ -2184,7 +2184,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0030",
+    "stockItemId": "SI0169",
     "productId": "P013",
     "productName": "SHAMPOO",
     "categoryId": "CAT04",
@@ -2197,7 +2197,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0031",
+    "stockItemId": "SI0170",
     "productId": "P014",
     "productName": "TOOTHPASTE",
     "categoryId": "CAT04",
@@ -2210,7 +2210,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0032",
+    "stockItemId": "SI0171",
     "productId": "P014",
     "productName": "TOOTHPASTE",
     "categoryId": "CAT04",
@@ -2223,7 +2223,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0033",
+    "stockItemId": "SI0172",
     "productId": "P015",
     "productName": "PERIOD PADS",
     "categoryId": "CAT04",
@@ -2236,7 +2236,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0034",
+    "stockItemId": "SI0173",
     "productId": "P015",
     "productName": "PERIOD PADS",
     "categoryId": "CAT04",
@@ -2249,7 +2249,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0001",
+    "stockItemId": "SI0174",
     "productId": "P016",
     "productName": "TOILET PAPER",
     "categoryId": "CAT05",
@@ -2262,7 +2262,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0002",
+    "stockItemId": "SI0175",
     "productId": "P016",
     "productName": "TOILET PAPER",
     "categoryId": "CAT05",
@@ -2275,7 +2275,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0003",
+    "stockItemId": "SI0176",
     "productId": "P017",
     "productName": "LAUNDRY DETERGENT",
     "categoryId": "CAT05",
@@ -2288,7 +2288,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0004",
+    "stockItemId": "SI0177",
     "productId": "P017",
     "productName": "LAUNDRY DETERGENT",
     "categoryId": "CAT05",
@@ -2301,7 +2301,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0005",
+    "stockItemId": "SI0178",
     "productId": "P018",
     "productName": "DISH SOAP",
     "categoryId": "CAT05",
@@ -2314,7 +2314,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0006",
+    "stockItemId": "SI0179",
     "productId": "P018",
     "productName": "DISH SOAP",
     "categoryId": "CAT05",
@@ -2327,7 +2327,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0007",
+    "stockItemId": "SI0180",
     "productId": "P016",
     "productName": "TOILET PAPER",
     "categoryId": "CAT05",
@@ -2340,7 +2340,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0008",
+    "stockItemId": "SI0181",
     "productId": "P016",
     "productName": "TOILET PAPER",
     "categoryId": "CAT05",
@@ -2353,7 +2353,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0009",
+    "stockItemId": "SI0182",
     "productId": "P017",
     "productName": "LAUNDRY DETERGENT",
     "categoryId": "CAT05",
@@ -2366,7 +2366,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0010",
+    "stockItemId": "SI0183",
     "productId": "P017",
     "productName": "LAUNDRY DETERGENT",
     "categoryId": "CAT05",
@@ -2379,7 +2379,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0011",
+    "stockItemId": "SI0184",
     "productId": "P017",
     "productName": "LAUNDRY DETERGENT",
     "categoryId": "CAT05",
@@ -2392,7 +2392,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0012",
+    "stockItemId": "SI0185",
     "productId": "P018",
     "productName": "DISH SOAP",
     "categoryId": "CAT05",
@@ -2405,7 +2405,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0013",
+    "stockItemId": "SI0186",
     "productId": "P018",
     "productName": "DISH SOAP",
     "categoryId": "CAT05",
@@ -2418,7 +2418,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0014",
+    "stockItemId": "SI0187",
     "productId": "P018",
     "productName": "DISH SOAP",
     "categoryId": "CAT05",
@@ -2431,7 +2431,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0015",
+    "stockItemId": "SI0188",
     "productId": "P016",
     "productName": "TOILET PAPER",
     "categoryId": "CAT05",
@@ -2444,7 +2444,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0016",
+    "stockItemId": "SI0189",
     "productId": "P016",
     "productName": "TOILET PAPER",
     "categoryId": "CAT05",
@@ -2457,7 +2457,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0017",
+    "stockItemId": "SI0190",
     "productId": "P017",
     "productName": "LAUNDRY DETERGENT",
     "categoryId": "CAT05",
@@ -2470,7 +2470,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0018",
+    "stockItemId": "SI0191",
     "productId": "P017",
     "productName": "LAUNDRY DETERGENT",
     "categoryId": "CAT05",
@@ -2483,7 +2483,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0019",
+    "stockItemId": "SI0192",
     "productId": "P018",
     "productName": "DISH SOAP",
     "categoryId": "CAT05",
@@ -2496,7 +2496,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0020",
+    "stockItemId": "SI0193",
     "productId": "P018",
     "productName": "DISH SOAP",
     "categoryId": "CAT05",
@@ -2509,7 +2509,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0021",
+    "stockItemId": "SI0194",
     "productId": "P016",
     "productName": "TOILET PAPER",
     "categoryId": "CAT05",
@@ -2522,7 +2522,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0022",
+    "stockItemId": "SI0195",
     "productId": "P016",
     "productName": "TOILET PAPER",
     "categoryId": "CAT05",
@@ -2535,7 +2535,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0023",
+    "stockItemId": "SI0196",
     "productId": "P016",
     "productName": "TOILET PAPER",
     "categoryId": "CAT05",
@@ -2548,7 +2548,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0024",
+    "stockItemId": "SI0197",
     "productId": "P017",
     "productName": "LAUNDRY DETERGENT",
     "categoryId": "CAT05",
@@ -2561,7 +2561,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0025",
+    "stockItemId": "SI0198",
     "productId": "P017",
     "productName": "LAUNDRY DETERGENT",
     "categoryId": "CAT05",
@@ -2574,7 +2574,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0026",
+    "stockItemId": "SI0199",
     "productId": "P017",
     "productName": "LAUNDRY DETERGENT",
     "categoryId": "CAT05",
@@ -2587,7 +2587,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0027",
+    "stockItemId": "SI0200",
     "productId": "P018",
     "productName": "DISH SOAP",
     "categoryId": "CAT05",
@@ -2600,7 +2600,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0028",
+    "stockItemId": "SI0201",
     "productId": "P018",
     "productName": "DISH SOAP",
     "categoryId": "CAT05",
@@ -2613,7 +2613,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0029",
+    "stockItemId": "SI0202",
     "productId": "P016",
     "productName": "TOILET PAPER",
     "categoryId": "CAT05",
@@ -2626,7 +2626,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0030",
+    "stockItemId": "SI0203",
     "productId": "P016",
     "productName": "TOILET PAPER",
     "categoryId": "CAT05",
@@ -2639,7 +2639,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0031",
+    "stockItemId": "SI0204",
     "productId": "P016",
     "productName": "TOILET PAPER",
     "categoryId": "CAT05",
@@ -2652,7 +2652,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0032",
+    "stockItemId": "SI0205",
     "productId": "P017",
     "productName": "LAUNDRY DETERGENT",
     "categoryId": "CAT05",
@@ -2665,7 +2665,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0033",
+    "stockItemId": "SI0206",
     "productId": "P017",
     "productName": "LAUNDRY DETERGENT",
     "categoryId": "CAT05",
@@ -2678,7 +2678,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0034",
+    "stockItemId": "SI0207",
     "productId": "P018",
     "productName": "DISH SOAP",
     "categoryId": "CAT05",
@@ -2691,7 +2691,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0035",
+    "stockItemId": "SI0208",
     "productId": "P018",
     "productName": "DISH SOAP",
     "categoryId": "CAT05",
@@ -2704,7 +2704,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0001",
+    "stockItemId": "SI0209",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -2717,7 +2717,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0002",
+    "stockItemId": "SI0210",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -2730,7 +2730,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0003",
+    "stockItemId": "SI0211",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -2743,7 +2743,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0004",
+    "stockItemId": "SI0212",
     "productId": "P020",
     "productName": "COLA",
     "categoryId": "CAT06",
@@ -2756,7 +2756,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0005",
+    "stockItemId": "SI0213",
     "productId": "P020",
     "productName": "COLA",
     "categoryId": "CAT06",
@@ -2769,7 +2769,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0006",
+    "stockItemId": "SI0214",
     "productId": "P020",
     "productName": "COLA",
     "categoryId": "CAT06",
@@ -2782,7 +2782,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0007",
+    "stockItemId": "SI0215",
     "productId": "P021",
     "productName": "WATER",
     "categoryId": "CAT06",
@@ -2795,7 +2795,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0008",
+    "stockItemId": "SI0216",
     "productId": "P021",
     "productName": "WATER",
     "categoryId": "CAT06",
@@ -2808,7 +2808,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0009",
+    "stockItemId": "SI0217",
     "productId": "P021",
     "productName": "WATER",
     "categoryId": "CAT06",
@@ -2821,7 +2821,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0010",
+    "stockItemId": "SI0218",
     "productId": "P022",
     "productName": "SODA WATER",
     "categoryId": "CAT06",
@@ -2834,7 +2834,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0011",
+    "stockItemId": "SI0219",
     "productId": "P022",
     "productName": "SODA WATER",
     "categoryId": "CAT06",
@@ -2847,7 +2847,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0012",
+    "stockItemId": "SI0220",
     "productId": "P022",
     "productName": "SODA WATER",
     "categoryId": "CAT06",
@@ -2860,7 +2860,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0013",
+    "stockItemId": "SI0221",
     "productId": "P023",
     "productName": "CHOCOLATE BAR",
     "categoryId": "CAT06",
@@ -2873,7 +2873,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0014",
+    "stockItemId": "SI0222",
     "productId": "P023",
     "productName": "CHOCOLATE BAR",
     "categoryId": "CAT06",
@@ -2886,7 +2886,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0015",
+    "stockItemId": "SI0223",
     "productId": "P023",
     "productName": "CHOCOLATE BAR",
     "categoryId": "CAT06",
@@ -2899,7 +2899,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0016",
+    "stockItemId": "SI0224",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -2912,7 +2912,7 @@
     "availabilityTag": "LOW"
   },
   {
-    "stockItemId": "SI0017",
+    "stockItemId": "SI0225",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -2925,7 +2925,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0018",
+    "stockItemId": "SI0226",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -2938,7 +2938,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0019",
+    "stockItemId": "SI0227",
     "productId": "P020",
     "productName": "COLA",
     "categoryId": "CAT06",
@@ -2951,7 +2951,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0020",
+    "stockItemId": "SI0228",
     "productId": "P020",
     "productName": "COLA",
     "categoryId": "CAT06",
@@ -2964,7 +2964,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0021",
+    "stockItemId": "SI0229",
     "productId": "P021",
     "productName": "WATER",
     "categoryId": "CAT06",
@@ -2977,7 +2977,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0022",
+    "stockItemId": "SI0230",
     "productId": "P021",
     "productName": "WATER",
     "categoryId": "CAT06",
@@ -2990,7 +2990,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0023",
+    "stockItemId": "SI0231",
     "productId": "P022",
     "productName": "SODA WATER",
     "categoryId": "CAT06",
@@ -3003,7 +3003,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0024",
+    "stockItemId": "SI0232",
     "productId": "P022",
     "productName": "SODA WATER",
     "categoryId": "CAT06",
@@ -3016,7 +3016,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0025",
+    "stockItemId": "SI0233",
     "productId": "P023",
     "productName": "CHOCOLATE BAR",
     "categoryId": "CAT06",
@@ -3029,7 +3029,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0026",
+    "stockItemId": "SI0234",
     "productId": "P023",
     "productName": "CHOCOLATE BAR",
     "categoryId": "CAT06",
@@ -3042,7 +3042,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0027",
+    "stockItemId": "SI0235",
     "productId": "P023",
     "productName": "CHOCOLATE BAR",
     "categoryId": "CAT06",
@@ -3055,7 +3055,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0028",
+    "stockItemId": "SI0236",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -3068,7 +3068,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0029",
+    "stockItemId": "SI0237",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -3081,7 +3081,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0030",
+    "stockItemId": "SI0238",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -3094,7 +3094,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0031",
+    "stockItemId": "SI0239",
     "productId": "P020",
     "productName": "COLA",
     "categoryId": "CAT06",
@@ -3107,7 +3107,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0032",
+    "stockItemId": "SI0240",
     "productId": "P020",
     "productName": "COLA",
     "categoryId": "CAT06",
@@ -3120,7 +3120,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0033",
+    "stockItemId": "SI0241",
     "productId": "P020",
     "productName": "COLA",
     "categoryId": "CAT06",
@@ -3133,7 +3133,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0034",
+    "stockItemId": "SI0242",
     "productId": "P021",
     "productName": "WATER",
     "categoryId": "CAT06",
@@ -3146,7 +3146,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0035",
+    "stockItemId": "SI0243",
     "productId": "P021",
     "productName": "WATER",
     "categoryId": "CAT06",
@@ -3159,7 +3159,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0036",
+    "stockItemId": "SI0244",
     "productId": "P021",
     "productName": "WATER",
     "categoryId": "CAT06",
@@ -3172,7 +3172,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0037",
+    "stockItemId": "SI0245",
     "productId": "P022",
     "productName": "SODA WATER",
     "categoryId": "CAT06",
@@ -3185,7 +3185,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0038",
+    "stockItemId": "SI0246",
     "productId": "P022",
     "productName": "SODA WATER",
     "categoryId": "CAT06",
@@ -3198,7 +3198,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0039",
+    "stockItemId": "SI0247",
     "productId": "P022",
     "productName": "SODA WATER",
     "categoryId": "CAT06",
@@ -3211,7 +3211,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0040",
+    "stockItemId": "SI0248",
     "productId": "P023",
     "productName": "CHOCOLATE BAR",
     "categoryId": "CAT06",
@@ -3224,7 +3224,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0041",
+    "stockItemId": "SI0249",
     "productId": "P023",
     "productName": "CHOCOLATE BAR",
     "categoryId": "CAT06",
@@ -3237,7 +3237,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0042",
+    "stockItemId": "SI0250",
     "productId": "P023",
     "productName": "CHOCOLATE BAR",
     "categoryId": "CAT06",
@@ -3250,7 +3250,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0043",
+    "stockItemId": "SI0251",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -3263,7 +3263,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0044",
+    "stockItemId": "SI0252",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -3276,7 +3276,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0045",
+    "stockItemId": "SI0253",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -3289,7 +3289,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0046",
+    "stockItemId": "SI0254",
     "productId": "P020",
     "productName": "COLA",
     "categoryId": "CAT06",
@@ -3302,7 +3302,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0047",
+    "stockItemId": "SI0255",
     "productId": "P020",
     "productName": "COLA",
     "categoryId": "CAT06",
@@ -3315,7 +3315,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0048",
+    "stockItemId": "SI0256",
     "productId": "P020",
     "productName": "COLA",
     "categoryId": "CAT06",
@@ -3328,7 +3328,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0049",
+    "stockItemId": "SI0257",
     "productId": "P021",
     "productName": "WATER",
     "categoryId": "CAT06",
@@ -3341,7 +3341,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0050",
+    "stockItemId": "SI0258",
     "productId": "P021",
     "productName": "WATER",
     "categoryId": "CAT06",
@@ -3354,7 +3354,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0051",
+    "stockItemId": "SI0259",
     "productId": "P022",
     "productName": "SODA WATER",
     "categoryId": "CAT06",
@@ -3367,7 +3367,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0052",
+    "stockItemId": "SI0260",
     "productId": "P022",
     "productName": "SODA WATER",
     "categoryId": "CAT06",
@@ -3380,7 +3380,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0053",
+    "stockItemId": "SI0261",
     "productId": "P022",
     "productName": "SODA WATER",
     "categoryId": "CAT06",
@@ -3393,7 +3393,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0054",
+    "stockItemId": "SI0262",
     "productId": "P023",
     "productName": "CHOCOLATE BAR",
     "categoryId": "CAT06",
@@ -3406,7 +3406,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0055",
+    "stockItemId": "SI0263",
     "productId": "P023",
     "productName": "CHOCOLATE BAR",
     "categoryId": "CAT06",
@@ -3419,7 +3419,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0056",
+    "stockItemId": "SI0264",
     "productId": "P023",
     "productName": "CHOCOLATE BAR",
     "categoryId": "CAT06",
@@ -3432,7 +3432,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0057",
+    "stockItemId": "SI0265",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -3445,7 +3445,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0058",
+    "stockItemId": "SI0266",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -3458,7 +3458,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0059",
+    "stockItemId": "SI0267",
     "productId": "P019",
     "productName": "POTATO CHIPS",
     "categoryId": "CAT06",
@@ -3471,7 +3471,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0060",
+    "stockItemId": "SI0268",
     "productId": "P020",
     "productName": "COLA",
     "categoryId": "CAT06",
@@ -3484,7 +3484,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0061",
+    "stockItemId": "SI0269",
     "productId": "P020",
     "productName": "COLA",
     "categoryId": "CAT06",
@@ -3497,7 +3497,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0062",
+    "stockItemId": "SI0270",
     "productId": "P020",
     "productName": "COLA",
     "categoryId": "CAT06",
@@ -3510,7 +3510,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0063",
+    "stockItemId": "SI0271",
     "productId": "P021",
     "productName": "WATER",
     "categoryId": "CAT06",
@@ -3523,7 +3523,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0064",
+    "stockItemId": "SI0272",
     "productId": "P021",
     "productName": "WATER",
     "categoryId": "CAT06",
@@ -3536,7 +3536,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0065",
+    "stockItemId": "SI0273",
     "productId": "P021",
     "productName": "WATER",
     "categoryId": "CAT06",
@@ -3549,7 +3549,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0066",
+    "stockItemId": "SI0274",
     "productId": "P022",
     "productName": "SODA WATER",
     "categoryId": "CAT06",
@@ -3562,7 +3562,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0067",
+    "stockItemId": "SI0275",
     "productId": "P022",
     "productName": "SODA WATER",
     "categoryId": "CAT06",
@@ -3575,7 +3575,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0068",
+    "stockItemId": "SI0276",
     "productId": "P022",
     "productName": "SODA WATER",
     "categoryId": "CAT06",
@@ -3588,7 +3588,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0069",
+    "stockItemId": "SI0277",
     "productId": "P023",
     "productName": "CHOCOLATE BAR",
     "categoryId": "CAT06",
@@ -3601,7 +3601,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0070",
+    "stockItemId": "SI0278",
     "productId": "P023",
     "productName": "CHOCOLATE BAR",
     "categoryId": "CAT06",
@@ -3614,7 +3614,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0001",
+    "stockItemId": "SI0279",
     "productId": "P024",
     "productName": "PASTA",
     "categoryId": "CAT07",
@@ -3627,7 +3627,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0002",
+    "stockItemId": "SI0280",
     "productId": "P024",
     "productName": "PASTA",
     "categoryId": "CAT07",
@@ -3640,7 +3640,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0003",
+    "stockItemId": "SI0281",
     "productId": "P025",
     "productName": "FLOUR",
     "categoryId": "CAT07",
@@ -3653,7 +3653,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0004",
+    "stockItemId": "SI0282",
     "productId": "P025",
     "productName": "FLOUR",
     "categoryId": "CAT07",
@@ -3666,7 +3666,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0005",
+    "stockItemId": "SI0283",
     "productId": "P025",
     "productName": "FLOUR",
     "categoryId": "CAT07",
@@ -3679,7 +3679,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0006",
+    "stockItemId": "SI0284",
     "productId": "P026",
     "productName": "RICE",
     "categoryId": "CAT07",
@@ -3692,7 +3692,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0007",
+    "stockItemId": "SI0285",
     "productId": "P026",
     "productName": "RICE",
     "categoryId": "CAT07",
@@ -3705,7 +3705,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0008",
+    "stockItemId": "SI0286",
     "productId": "P026",
     "productName": "RICE",
     "categoryId": "CAT07",
@@ -3718,7 +3718,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0009",
+    "stockItemId": "SI0287",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
@@ -3731,7 +3731,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0010",
+    "stockItemId": "SI0288",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
@@ -3744,7 +3744,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0011",
+    "stockItemId": "SI0289",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
@@ -3757,7 +3757,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0012",
+    "stockItemId": "SI0290",
     "productId": "P024",
     "productName": "PASTA",
     "categoryId": "CAT07",
@@ -3770,7 +3770,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0013",
+    "stockItemId": "SI0291",
     "productId": "P024",
     "productName": "PASTA",
     "categoryId": "CAT07",
@@ -3783,7 +3783,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0014",
+    "stockItemId": "SI0292",
     "productId": "P025",
     "productName": "FLOUR",
     "categoryId": "CAT07",
@@ -3796,7 +3796,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0015",
+    "stockItemId": "SI0293",
     "productId": "P025",
     "productName": "FLOUR",
     "categoryId": "CAT07",
@@ -3809,7 +3809,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0016",
+    "stockItemId": "SI0294",
     "productId": "P026",
     "productName": "RICE",
     "categoryId": "CAT07",
@@ -3822,7 +3822,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0017",
+    "stockItemId": "SI0295",
     "productId": "P026",
     "productName": "RICE",
     "categoryId": "CAT07",
@@ -3835,7 +3835,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0018",
+    "stockItemId": "SI0296",
     "productId": "P026",
     "productName": "RICE",
     "categoryId": "CAT07",
@@ -3848,7 +3848,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0019",
+    "stockItemId": "SI0297",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
@@ -3861,7 +3861,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0020",
+    "stockItemId": "SI0298",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
@@ -3874,7 +3874,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0021",
+    "stockItemId": "SI0299",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
@@ -3887,7 +3887,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0022",
+    "stockItemId": "SI0300",
     "productId": "P024",
     "productName": "PASTA",
     "categoryId": "CAT07",
@@ -3900,7 +3900,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0023",
+    "stockItemId": "SI0301",
     "productId": "P024",
     "productName": "PASTA",
     "categoryId": "CAT07",
@@ -3913,7 +3913,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0024",
+    "stockItemId": "SI0302",
     "productId": "P024",
     "productName": "PASTA",
     "categoryId": "CAT07",
@@ -3926,7 +3926,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0025",
+    "stockItemId": "SI0303",
     "productId": "P025",
     "productName": "FLOUR",
     "categoryId": "CAT07",
@@ -3939,7 +3939,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0026",
+    "stockItemId": "SI0304",
     "productId": "P025",
     "productName": "FLOUR",
     "categoryId": "CAT07",
@@ -3952,7 +3952,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0027",
+    "stockItemId": "SI0305",
     "productId": "P026",
     "productName": "RICE",
     "categoryId": "CAT07",
@@ -3965,7 +3965,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0028",
+    "stockItemId": "SI0306",
     "productId": "P026",
     "productName": "RICE",
     "categoryId": "CAT07",
@@ -3978,7 +3978,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0029",
+    "stockItemId": "SI0307",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
@@ -3991,7 +3991,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0030",
+    "stockItemId": "SI0308",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
@@ -4004,7 +4004,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0031",
+    "stockItemId": "SI0309",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
@@ -4017,7 +4017,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0032",
+    "stockItemId": "SI0310",
     "productId": "P024",
     "productName": "PASTA",
     "categoryId": "CAT07",
@@ -4030,7 +4030,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0033",
+    "stockItemId": "SI0311",
     "productId": "P024",
     "productName": "PASTA",
     "categoryId": "CAT07",
@@ -4043,7 +4043,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0034",
+    "stockItemId": "SI0312",
     "productId": "P024",
     "productName": "PASTA",
     "categoryId": "CAT07",
@@ -4056,7 +4056,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0035",
+    "stockItemId": "SI0313",
     "productId": "P025",
     "productName": "FLOUR",
     "categoryId": "CAT07",
@@ -4069,7 +4069,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0036",
+    "stockItemId": "SI0314",
     "productId": "P025",
     "productName": "FLOUR",
     "categoryId": "CAT07",
@@ -4082,7 +4082,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0037",
+    "stockItemId": "SI0315",
     "productId": "P025",
     "productName": "FLOUR",
     "categoryId": "CAT07",
@@ -4095,7 +4095,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0038",
+    "stockItemId": "SI0316",
     "productId": "P026",
     "productName": "RICE",
     "categoryId": "CAT07",
@@ -4108,7 +4108,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0039",
+    "stockItemId": "SI0317",
     "productId": "P026",
     "productName": "RICE",
     "categoryId": "CAT07",
@@ -4121,7 +4121,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0040",
+    "stockItemId": "SI0318",
     "productId": "P026",
     "productName": "RICE",
     "categoryId": "CAT07",
@@ -4134,7 +4134,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0041",
+    "stockItemId": "SI0319",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
@@ -4147,7 +4147,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0042",
+    "stockItemId": "SI0320",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
@@ -4160,7 +4160,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0043",
+    "stockItemId": "SI0321",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
@@ -4173,7 +4173,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0044",
+    "stockItemId": "SI0322",
     "productId": "P024",
     "productName": "PASTA",
     "categoryId": "CAT07",
@@ -4186,7 +4186,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0045",
+    "stockItemId": "SI0323",
     "productId": "P024",
     "productName": "PASTA",
     "categoryId": "CAT07",
@@ -4199,7 +4199,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0046",
+    "stockItemId": "SI0324",
     "productId": "P024",
     "productName": "PASTA",
     "categoryId": "CAT07",
@@ -4212,7 +4212,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0047",
+    "stockItemId": "SI0325",
     "productId": "P025",
     "productName": "FLOUR",
     "categoryId": "CAT07",
@@ -4225,7 +4225,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0048",
+    "stockItemId": "SI0326",
     "productId": "P025",
     "productName": "FLOUR",
     "categoryId": "CAT07",
@@ -4238,7 +4238,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0049",
+    "stockItemId": "SI0327",
     "productId": "P025",
     "productName": "FLOUR",
     "categoryId": "CAT07",
@@ -4251,7 +4251,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0050",
+    "stockItemId": "SI0328",
     "productId": "P026",
     "productName": "RICE",
     "categoryId": "CAT07",
@@ -4264,7 +4264,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0051",
+    "stockItemId": "SI0329",
     "productId": "P026",
     "productName": "RICE",
     "categoryId": "CAT07",
@@ -4277,7 +4277,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0052",
+    "stockItemId": "SI0330",
     "productId": "P026",
     "productName": "RICE",
     "categoryId": "CAT07",
@@ -4290,7 +4290,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0053",
+    "stockItemId": "SI0331",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
@@ -4303,7 +4303,7 @@
     "availabilityTag": "MEDIUM"
   },
   {
-    "stockItemId": "SI0054",
+    "stockItemId": "SI0332",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
@@ -4316,7 +4316,7 @@
     "availabilityTag": "HIGH"
   },
   {
-    "stockItemId": "SI0055",
+    "stockItemId": "SI0333",
     "productId": "P027",
     "productName": "OIL",
     "categoryId": "CAT07",
