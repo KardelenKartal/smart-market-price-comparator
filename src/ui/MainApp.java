@@ -19,6 +19,9 @@ public class MainApp extends Application {
         );
         searchScreen.setAllStores(data.stores);
         searchScreen.setAllCampaigns(data.campaigns);
+        searchScreen.setAllPriceHistories(data.priceHistory);
+        searchScreen.setAllStoreLocations(data.storeLocations); // YENİ
+        searchScreen.setAllStartPoints(data.startPoints);       // YENİ
         searchScreen.start(stage);
     }
 

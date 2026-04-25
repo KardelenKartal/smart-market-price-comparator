@@ -1,3 +1,5 @@
+package util;
+
 
 /**
  * GeoUtils
@@ -68,4 +70,3 @@ public class GeoUtils {
         return total;
     }
 }
-

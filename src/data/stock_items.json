@@ -722,7 +722,7 @@
     "category": "Meat & Protein",
     "storeId": "A101-01",
     "chain": "A101",
-    "brand": "Keskinoğlu Kalça",
+    "brand": "Keskinoğlu Kalça", 
     "currentPrice": 135.0,
     "discountedPrice": null,
     "availabilityTag": "MEDIUM"

@@ -23,33 +23,26 @@ import java.util.stream.Collectors;
 public class ComparisonScreen {
 
     private Stage stage;
-    private List<Product> basket;
+    private List<Product>  basket;
     private List<StockItem> stockItems;
-    private List<Store> stores;
+    private List<Store>    stores;
     private List<Campaign> campaigns;
 
     private Map<String, List<StockItem>> stockByStoreId = new HashMap<>();
     private Map<String, List<StockItem>> stockByChain   = new HashMap<>();
-    private Map<String, Campaign>        campaignByProductId = new HashMap<>();
+    private Map<String, Campaign>        campaignByStockId = new HashMap<>();
 
     private Scene previousScene;
 
-    public ComparisonScreen(List<Product> basket,
-                            List<StockItem> stockItems,
-                            List<Store> stores) {
+    public ComparisonScreen(List<Product> basket, List<StockItem> stockItems, List<Store> stores) {
         this.basket     = nvl(basket);
         this.stockItems = nvl(stockItems);
         this.stores     = nvl(stores);
         this.campaigns  = new ArrayList<>();
     }
 
-    public void setCampaigns(List<Campaign> campaigns) {
-        this.campaigns = nvl(campaigns);
-    }
-
-    public void setPreviousScene(Scene scene) {
-        this.previousScene = scene;
-    }
+    public void setCampaigns(List<Campaign> campaigns) { this.campaigns = nvl(campaigns); }
+    public void setPreviousScene(Scene scene)          { this.previousScene = scene; }
 
     public void start(Stage stage) {
         this.stage = stage;
@@ -77,11 +70,10 @@ public class ComparisonScreen {
         Map<String, Double>  storeTotals = new LinkedHashMap<>();
         Map<String, Boolean> storeHasAny = new HashMap<>();
 
-        for (Store store : stores) {
+        // Zincirleri benzersiz şekilde al (birden fazla şube olabilir)
+        List<String> distinctChains = getDistinctChains();
 
-            String sId    = store.getStoreId();
-            String sName  = store.getName();
-            String sChain = normalize(store.getChainName());
+        for (String chainName : distinctChains) {
 
             VBox card = new VBox(0);
             card.setPrefWidth(280);
@@ -93,7 +85,7 @@ public class ComparisonScreen {
                 "-fx-border-radius: 12;"
             );
 
-            Label storeLbl = new Label(sName.toUpperCase());
+            Label storeLbl = new Label(chainName.toUpperCase());
             storeLbl.setFont(Font.font("System", FontWeight.BOLD, 13));
             storeLbl.setTextFill(Color.WHITE);
             storeLbl.setMaxWidth(Double.MAX_VALUE);
@@ -110,33 +102,32 @@ public class ComparisonScreen {
             boolean anyFound = false;
 
             for (Product product : basket) {
-
                 String pId   = product.getProductId();
                 String pName = product.getName();
 
-                StockItem stock = findByStoreId(sId, pId);
-                if (stock == null && !sChain.isEmpty())
-                    stock = findByChain(sChain, pId);
+                // Bu zincirdeki tüm stokları çek, en ucuz markayı seç
+                StockItem bestStock = getCheapestStockForProductInChain(pId, chainName);
 
                 Label nameLbl  = new Label(pName);
                 nameLbl.setFont(Font.font("System", FontWeight.BOLD, 12));
                 nameLbl.setTextFill(Color.BLACK);
 
                 Label priceLbl = new Label();
+                Label brandLbl = new Label();
                 Label tagLbl   = new Label();
                 Label campLbl  = new Label();
 
-                if (stock != null) {
+                if (bestStock != null) {
                     anyFound = true;
 
-                    double base   = stock.getCurrentPrice();
-                    double final_ = stock.getEffectivePrice();
-                    boolean hasDisc = (final_ < base);
+                    double base   = bestStock.getCurrentPrice();
+                    double final_ = bestStock.getEffectivePrice();
+                    boolean hasDisc = (final_ < base - 0.001);
 
                     total += final_;
 
                     if (hasDisc) {
-                        priceLbl.setText(String.format("%.2f TL  (eski: %.2f TL)", final_, base));
+                        priceLbl.setText(String.format("%.2f TL  (was: %.2f TL)", final_, base));
                         priceLbl.setTextFill(Color.web("#e65100"));
                         priceLbl.setFont(Font.font("System", FontWeight.BOLD, 12));
                     } else {
@@ -145,9 +136,16 @@ public class ComparisonScreen {
                         priceLbl.setFont(Font.font("System", 12));
                     }
 
-                    String tag = stock.getAvailabilityTag() != null
-                        ? stock.getAvailabilityTag().name()
-                        : "UNKNOWN";
+                    // Marka bilgisi
+                    if (bestStock.getBrand() != null && !bestStock.getBrand().isBlank()) {
+                        brandLbl.setText(bestStock.getBrand());
+                        brandLbl.setFont(Font.font("System", 11));
+                        brandLbl.setTextFill(Color.web("#6a1b9a"));
+                    }
+
+                    // Stok durumu
+                    String tag = bestStock.getAvailabilityTag() != null
+                        ? bestStock.getAvailabilityTag().name() : "UNKNOWN";
                     tagLbl.setText("[" + tag + "]");
                     tagLbl.setFont(Font.font("System", FontWeight.BOLD, 11));
                     switch (tag) {
@@ -156,10 +154,10 @@ public class ComparisonScreen {
                         default       -> tagLbl.setTextFill(Color.web("#b71c1c"));
                     }
 
-                    Campaign camp = campaignByProductId.get(pId);
+                    // Kampanya — stok ID'siyle eşleştir
+                    Campaign camp = campaignByStockId.get(bestStock.getStockItemId());
                     if (camp != null) {
-                        String desc = camp.getType() + " - %" + camp.getDiscountRate();
-                        campLbl.setText("[KAMPANYA] " + desc);
+                        campLbl.setText("[KAMPANYA] " + camp.getType() + " -%" + camp.getDiscountRate());
                         campLbl.setFont(Font.font("System", 10));
                         campLbl.setTextFill(Color.web("#6a1b9a"));
                         campLbl.setWrapText(true);
@@ -173,11 +171,10 @@ public class ComparisonScreen {
 
                 VBox productBox = new VBox(2);
                 productBox.setPadding(new Insets(4, 6, 4, 6));
-                productBox.setStyle(
-                    "-fx-background-color: #f5f5f5;" +
-                    "-fx-background-radius: 6;"
-                );
-                productBox.getChildren().addAll(nameLbl, priceLbl, tagLbl);
+                productBox.setStyle("-fx-background-color: #f5f5f5; -fx-background-radius: 6;");
+                productBox.getChildren().addAll(nameLbl, priceLbl);
+                if (!brandLbl.getText().isEmpty()) productBox.getChildren().add(brandLbl);
+                productBox.getChildren().add(tagLbl);
                 if (!campLbl.getText().isEmpty()) productBox.getChildren().add(campLbl);
 
                 itemsBox.getChildren().add(productBox);
@@ -209,8 +206,8 @@ public class ComparisonScreen {
 
             card.getChildren().addAll(storeLbl, itemsScroll, sep, totalLbl);
 
-            storeTotals.put(sName, anyFound ? total : Double.MAX_VALUE);
-            storeHasAny.put(sName, anyFound);
+            storeTotals.put(chainName, anyFound ? total : Double.MAX_VALUE);
+            storeHasAny.put(chainName, anyFound);
             storeRow.getChildren().add(card);
         }
 
@@ -222,12 +219,12 @@ public class ComparisonScreen {
             "-fx-border-color: transparent;"
         );
         storeScroll.setPrefHeight(320);
-
         page.getChildren().add(storeScroll);
 
+        // En ucuz zincir
         Optional<Map.Entry<String, Double>> winnerEntry = storeTotals.entrySet().stream()
-                .filter(e -> storeHasAny.getOrDefault(e.getKey(), false))
-                .min(Map.Entry.comparingByValue());
+            .filter(e -> storeHasAny.getOrDefault(e.getKey(), false))
+            .min(Map.Entry.comparingByValue());
 
         VBox winnerBox = new VBox(6);
         winnerBox.setAlignment(Pos.CENTER);
@@ -250,7 +247,6 @@ public class ComparisonScreen {
             w1.setTextFill(Color.BLACK);
             winnerBox.getChildren().add(w1);
         }
-
         page.getChildren().add(winnerBox);
 
         Button backBtn = new Button("< BACK TO SEARCH");
@@ -264,32 +260,25 @@ public class ComparisonScreen {
             "-fx-background-radius: 8;"
         );
         backBtn.setOnAction(e -> {
-            if (previousScene != null) {
-                stage.setScene(previousScene);
-                stage.show();
-            } else {
-                stage.close();
-            }
+            if (previousScene != null) { stage.setScene(previousScene); stage.show(); }
+            else stage.close();
         });
-
         page.getChildren().add(backBtn);
 
         ScrollPane outerScroll = new ScrollPane(page);
         outerScroll.setFitToWidth(true);
-        outerScroll.setStyle(
-            "-fx-background: transparent;" +
-            "-fx-background-color: transparent;"
-        );
+        outerScroll.setStyle("-fx-background: transparent; -fx-background-color: transparent;");
 
         root.getChildren().add(outerScroll);
         stage.setScene(new Scene(root, 1000, 750));
         stage.show();
     }
 
+    // ── Index ─────────────────────────────────────────────────────────
     private void buildIndex() {
         stockByStoreId.clear();
         stockByChain.clear();
-        campaignByProductId.clear();
+        campaignByStockId.clear();
 
         for (StockItem s : stockItems) {
             String sid   = s.getStoreId();
@@ -300,26 +289,33 @@ public class ComparisonScreen {
         }
 
         for (Campaign c : campaigns) {
-            String sid = c.getStockItemId();
-            if (sid != null && !sid.isEmpty())
-                campaignByProductId.putIfAbsent(sid, c);
+            if (c.getStockItemId() != null && !c.getStockItemId().isEmpty())
+                campaignByStockId.putIfAbsent(c.getStockItemId(), c);
         }
     }
 
-    private StockItem findByStoreId(String storeId, String productId) {
-        List<StockItem> list = stockByStoreId.get(storeId);
+    /**
+     * Belirli bir ürünün belirli bir zincirdeki en ucuz stok kaydını döndürür.
+     * Birden fazla marka varsa efektif fiyatı en düşük olanı seçer.
+     */
+    private StockItem getCheapestStockForProductInChain(String productId, String chainName) {
+        List<StockItem> list = stockByChain.get(normalize(chainName));
         if (list == null) return null;
-        for (StockItem s : list)
-            if (s.getProductId() != null && s.getProductId().equalsIgnoreCase(productId)) return s;
-        return null;
+        return list.stream()
+            .filter(s -> productId.equalsIgnoreCase(s.getProductId()))
+            .min(Comparator.comparingDouble(StockItem::getEffectivePrice))
+            .orElse(null);
     }
 
-    private StockItem findByChain(String chain, String productId) {
-        List<StockItem> list = stockByChain.get(chain);
-        if (list == null) return null;
-        for (StockItem s : list)
-            if (s.getProductId() != null && s.getProductId().equalsIgnoreCase(productId)) return s;
-        return null;
+    /** Stores listesinden benzersiz zincir adlarını çıkar */
+    private List<String> getDistinctChains() {
+        List<String> chains = new ArrayList<>();
+        Set<String> seen = new LinkedHashSet<>();
+        for (Store store : stores) {
+            String c = store.getChainName();
+            if (c != null && !c.isEmpty() && seen.add(c)) chains.add(c);
+        }
+        return chains;
     }
 
     private String normalize(String raw) {
@@ -333,14 +329,11 @@ public class ComparisonScreen {
         try {
             File f = new File("src/data/3.jpg");
             if (f.exists()) {
-                Image bg = new Image(f.toURI().toString());
+                javafx.scene.image.Image bg = new javafx.scene.image.Image(f.toURI().toString());
                 BackgroundSize size = new BackgroundSize(100, 100, true, true, true, true);
                 root.setBackground(new Background(new BackgroundImage(
-                    bg,
-                    BackgroundRepeat.NO_REPEAT,
-                    BackgroundRepeat.NO_REPEAT,
-                    BackgroundPosition.CENTER,
-                    size)));
+                    bg, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT,
+                    BackgroundPosition.CENTER, size)));
             }
         } catch (Exception e) { e.printStackTrace(); }
     }
