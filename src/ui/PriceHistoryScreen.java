@@ -30,7 +30,6 @@ public class PriceHistoryScreen {
     private List<StockItem>    stockItems;
     private List<Store>        stores;
     private List<PriceHistory> priceHistories;
-    // Basket'ten gelen seçili StockItem'lar (pId → StockItem)
     private List<StockItem>    selectedStockItems;
 
     private Map<String, List<PriceHistory>> phByStockId  = new HashMap<>();
@@ -41,7 +40,6 @@ public class PriceHistoryScreen {
     private Canvas    chartCanvas;
     private VBox      statsBox;
     private MenuButton pickBtn;
-    // Seçili StockItem (grafik için)
     private StockItem pickedItem = null;
 
     public PriceHistoryScreen(List<Product> basket, List<StockItem> stockItems,
@@ -54,7 +52,6 @@ public class PriceHistoryScreen {
         this.selectedStockItems = nvl(selectedStockItems);
     }
 
-    // Eski imza — geriye dönük uyumluluk
     public PriceHistoryScreen(List<Product> basket, List<StockItem> stockItems,
                                List<Store> stores, List<PriceHistory> priceHistories) {
         this(basket, stockItems, stores, priceHistories, new ArrayList<StockItem>());
@@ -72,14 +69,13 @@ public class PriceHistoryScreen {
         VBox page = new VBox(14);
         page.setPadding(new Insets(20));
         page.setAlignment(Pos.TOP_CENTER);
-        page.setStyle("-fx-background-color:rgba(255,255,255,0.95); -fx-background-radius:16;");
+        page.setStyle("-fx-background-color:rgba(255,255,255,0.25);");
 
         Label title = new Label("PRICE HISTORY — W1 to W4");
         title.setFont(Font.font("System", FontWeight.BOLD, 22));
         title.setTextFill(Color.DARKBLUE);
         page.getChildren().add(title);
 
-        // ── PICK PRODUCTS dropdown ────────────────────────────────────
         pickBtn = new MenuButton("PICK PRODUCT ▼");
         pickBtn.setStyle(
             "-fx-background-color: #26c6da;" +
@@ -90,48 +86,32 @@ public class PriceHistoryScreen {
             "-fx-padding: 8 20 8 20;"
         );
 
-        // Sadece basket'ten gelen seçili StockItem'ları listeye ekle
-        // Eğer hiç seçili yoksa, basket'teki ürünlerin tüm stockItem'larını ekle
-        List<StockItem> itemsForPick;
-        if (!selectedStockItems.isEmpty()) {
-            itemsForPick = selectedStockItems;
-        } else {
-            // Basket'teki ürünlere ait ve price history'de olan stock item'lar
-            Set<String> basketPids = basket.stream()
-                .map(Product::getProductId).collect(Collectors.toSet());
-            itemsForPick = stockItems.stream()
-                .filter(s -> basketPids.contains(s.getProductId()))
-                .filter(s -> phByStockId.containsKey(s.getStockItemId()))
-                .collect(Collectors.toList());
-        }
-
-        // Sadece price history'de olan itemları göster
-        List<StockItem> availableItems = itemsForPick.stream()
+        List<StockItem> availableItems = selectedStockItems.stream()
             .filter(s -> phByStockId.containsKey(s.getStockItemId()))
             .collect(Collectors.toList());
 
-        for (StockItem si : availableItems) {
-            String label = si.getProductName() + " — " + si.getBrand() + " (" + si.getChain() + ")";
-            MenuItem mi = new MenuItem(label);
-            mi.setOnAction(e -> {
-                pickedItem = si;
-                pickBtn.setText(label + " ▼");
-                drawChart();
-            });
-            pickBtn.getItems().add(mi);
-        }
-
         if (availableItems.isEmpty()) {
-            MenuItem mi = new MenuItem("No price history data for selected items");
+            MenuItem mi = new MenuItem("No items selected. Please go back to Basket and select variants first.");
             mi.setDisable(true);
             pickBtn.getItems().add(mi);
+            pickBtn.setText("PICK PRODUCT ▼");
+        } else {
+            for (StockItem si : availableItems) {
+                String label = si.getProductName() + " — " + si.getBrand() + " (" + si.getChain() + ")";
+                MenuItem mi = new MenuItem(label);
+                mi.setOnAction(e -> {
+                    pickedItem = si;
+                    pickBtn.setText(label + " ▼");
+                    drawChart();
+                });
+                pickBtn.getItems().add(mi);
+            }
         }
 
         HBox pickRow = new HBox(pickBtn);
         pickRow.setAlignment(Pos.CENTER_LEFT);
         page.getChildren().add(pickRow);
 
-        // ── Grafik canvas ─────────────────────────────────────────────
         chartCanvas = new Canvas(880, 360);
         ScrollPane chartScroll = new ScrollPane(chartCanvas);
         chartScroll.setFitToHeight(true);
@@ -139,13 +119,11 @@ public class PriceHistoryScreen {
         chartScroll.setStyle("-fx-background:transparent; -fx-background-color:transparent; -fx-border-color:#dddddd;");
         page.getChildren().add(chartScroll);
 
-        // ── İstatistik kutusu ─────────────────────────────────────────
         statsBox = new VBox(6);
         statsBox.setPadding(new Insets(12));
         statsBox.setStyle("-fx-background-color:#f5f5f5; -fx-border-color:#dddddd; -fx-border-radius:8; -fx-background-radius:8;");
         page.getChildren().add(statsBox);
 
-        // ── Geri butonu ───────────────────────────────────────────────
         Button backBtn = new Button("< BACK TO BASKET");
         backBtn.setMaxWidth(Double.MAX_VALUE); backBtn.setPrefHeight(44);
         backBtn.setStyle("-fx-background-color:#c62828; -fx-text-fill:white; -fx-font-size:14; -fx-font-weight:bold; -fx-background-radius:8;");
@@ -159,13 +137,12 @@ public class PriceHistoryScreen {
 
         ScrollPane outer = new ScrollPane(page);
         outer.setFitToWidth(true);
-        outer.setStyle("-fx-background:transparent; -fx-background-color:transparent;");
+        outer.setStyle("-fx-background:rgba(255,255,255,0.80); -fx-background-color:rgba(255,255,255,0.80);");
         root.getChildren().add(outer);
 
         stage.setScene(new Scene(root, 1000, 750));
         stage.show();
 
-        // İlk ürünü otomatik seç
         if (!availableItems.isEmpty()) {
             pickedItem = availableItems.get(0);
             String lbl = pickedItem.getProductName() + " — " + pickedItem.getBrand()
@@ -177,14 +154,12 @@ public class PriceHistoryScreen {
         }
     }
 
-    // ─────────────────────────────────────────────────────────────────
     private void drawChart() {
         if (pickedItem == null) { drawEmpty(); return; }
 
         List<PriceHistory> phs = phByStockId.get(pickedItem.getStockItemId());
         if (phs == null || phs.isEmpty()) { drawEmpty(); return; }
 
-        // W1-W4 fiyatlarını çek
         double[] prices = new double[4];
         for (PriceHistory ph : phs) {
             int wi = weekIndex(ph.getDate());
@@ -225,7 +200,6 @@ public class PriceHistoryScreen {
 
         double xStep = plotW / 3.0;
 
-        // Dikey çizgiler + X etiketleri
         for (int i = 0; i < 4; i++) {
             double x = padL + i * xStep;
             gc.setStroke(Color.web("#dddddd")); gc.setLineWidth(1);
@@ -235,12 +209,10 @@ public class PriceHistoryScreen {
             gc.fillText(WEEKS[i], x - 10, padT + plotH + 24);
         }
 
-        // Eksen
         gc.setStroke(Color.web("#aaaaaa")); gc.setLineWidth(1.5);
         gc.strokeLine(padL, padT, padL, padT + plotH);
         gc.strokeLine(padL, padT + plotH, padL + plotW, padT + plotH);
 
-        // Başlık
         String chartTitle = pickedItem.getProductName() + " — " + pickedItem.getBrand()
             + " (" + pickedItem.getChain() + ")";
         gc.setFill(Color.web("#1565c0"));
@@ -261,25 +233,24 @@ public class PriceHistoryScreen {
             prevX = x; prevY = y;
         }
 
-        // Noktalar + fiyat etiketleri
         for (int i = 0; i < 4; i++) {
             if (prices[i] == 0) continue;
             double x = padL + i * xStep;
             double y = padT + plotH - plotH * (prices[i] - yMin) / (yMax - yMin);
 
-            // Daire
+            
             gc.setFill(lineColor);
             gc.fillOval(x - 7, y - 7, 14, 14);
             gc.setFill(Color.WHITE);
             gc.fillOval(x - 4, y - 4, 8, 8);
 
-            // Fiyat
+          
             gc.setFill(Color.web("#333333"));
             gc.setFont(Font.font("System", FontWeight.BOLD, 12));
             gc.fillText(String.format("%.2f", prices[i]), x - 18, y - 12);
         }
 
-        // ── İstatistikler ─────────────────────────────────────────────
+
         statsBox.getChildren().clear();
 
         double[] validPrices = Arrays.stream(prices).filter(v -> v > 0).toArray();
@@ -287,7 +258,7 @@ public class PriceHistoryScreen {
 
         double statMin  = Arrays.stream(validPrices).min().getAsDouble();
         double statMax  = Arrays.stream(validPrices).max().getAsDouble();
-        double current  = prices[3] > 0 ? prices[3] : prices[2]; // W4, yoksa W3
+        double current  = prices[3] > 0 ? prices[3] : prices[2]; 
 
         int minWeekIdx  = -1, maxWeekIdx = -1;
         for (int i = 0; i < 4; i++) {
@@ -303,13 +274,13 @@ public class PriceHistoryScreen {
         HBox statsRow = new HBox(30);
         statsRow.setAlignment(Pos.CENTER_LEFT);
 
-        // En ucuz
+       
         VBox minBox = statCard("CHEAPEST", WEEKS[minWeekIdx >= 0 ? minWeekIdx : 0],
             String.format("%.2f TL", statMin), "#1b5e20", "#e8f5e9");
-        // En pahalı
+    
         VBox maxBox = statCard("MOST EXPENSIVE", WEEKS[maxWeekIdx >= 0 ? maxWeekIdx : 3],
             String.format("%.2f TL", statMax), "#b71c1c", "#ffebee");
-        // Current (W4)
+  
         VBox curBox = statCard("CURRENT (W4)", "W4",
             String.format("%.2f TL", current), "#0d47a1", "#e3f2fd");
 
@@ -341,17 +312,17 @@ public class PriceHistoryScreen {
         return box;
     }
 
+
     private void drawEmpty() {
         GraphicsContext gc = chartCanvas.getGraphicsContext2D();
         gc.clearRect(0, 0, chartCanvas.getWidth(), chartCanvas.getHeight());
         gc.setFill(Color.GRAY);
         gc.setFont(Font.font("System", 15));
-        gc.fillText("Select a product from PICK PRODUCT to see its price history.",
+        gc.fillText("No items selected. Go back to Basket, select your variants, then return here.",
             50, chartCanvas.getHeight() / 2);
         statsBox.getChildren().clear();
     }
 
-    // ── Index ─────────────────────────────────────────────────────────
     private void buildIndex() {
         phByStockId.clear(); stockById.clear();
         for (StockItem s : stockItems)

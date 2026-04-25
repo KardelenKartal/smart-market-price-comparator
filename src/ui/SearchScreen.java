@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
@@ -86,6 +87,19 @@ public class SearchScreen {
         topGrid.setAlignment(Pos.TOP_LEFT);
         topGrid.setPadding(new Insets(10, 0, 0, 60));
 
+        // Kategori seçilip product seçilmediğinde gösterilecek not
+        Label noteLabel = new Label(
+            "Select a product from the PRODUCTS dropdown to see its variants.Pick specific variants in the Basket screen.");
+        noteLabel.setFont(Font.font("System", 12));
+        noteLabel.setTextFill(Color.web("#e65100"));
+        noteLabel.setWrapText(true);
+        noteLabel.setMaxWidth(700);
+        noteLabel.setStyle(
+            "-fx-background-color:#fff3e0; -fx-background-radius:6;" +
+            "-fx-border-color:#ffb74d; -fx-border-radius:6; -fx-border-width:1; -fx-padding:6 12 6 12;");
+        noteLabel.setVisible(false);
+        noteLabel.setManaged(false);
+
         searchBar.setPromptText("Search items...");
         searchBar.setPrefWidth(500);
         searchBar.setOnKeyReleased(e -> filterLogic());
@@ -98,7 +112,13 @@ public class SearchScreen {
             });
             categoryCombo.setValue("All Categories");
         }
-        categoryCombo.setOnAction(e -> onCategoryChanged());
+        categoryCombo.setOnAction(e -> {
+            onCategoryChanged();
+            boolean catSel = categoryCombo.getValue() != null
+                && !categoryCombo.getValue().equals("All Categories");
+            noteLabel.setVisible(catSel);
+            noteLabel.setManaged(catSel);
+        });
 
         // Product combo — kategori seçilince dolar, başta pasif
         productCombo.getItems().add("All Products");
@@ -106,7 +126,12 @@ public class SearchScreen {
         productCombo.setPrefWidth(180);
         productCombo.setDisable(true);
         productCombo.setOpacity(0.5);
-        productCombo.setOnAction(e -> onProductChanged());
+        productCombo.setOnAction(e -> {
+            onProductChanged();
+            boolean prodSel = productCombo.getValue() != null
+                && !productCombo.getValue().equals("All Products");
+            if (prodSel) { noteLabel.setVisible(false); noteLabel.setManaged(false); }
+        });
 
         gridLabel(topGrid, "SEARCH ITEMS:", 0, 0);
         topGrid.add(searchBar, 1, 0);
@@ -121,7 +146,7 @@ public class SearchScreen {
         variantListView.setVisible(false);
         variantListView.setManaged(false);
 
-        leftTitle = new Label("AVAILABLE PRODUCTS");
+        leftTitle = new Label("AVAILABLE PRODUCTS  (double-click to add)");
         leftTitle.setFont(Font.font("System", FontWeight.BOLD, 14));
 
         leftBox = new VBox(5);
@@ -143,7 +168,7 @@ public class SearchScreen {
         rightTitle.setFont(Font.font("System", FontWeight.BOLD, 14));
         ListView<Product> basketListView = new ListView<>(basketModel);
         basketListView.setPrefSize(400, 450);
-        basketListView.setStyle("-fx-background-color: transparent;");
+        basketListView.setStyle("-fx-background-color: rgba(0,0,0,0); -fx-background: rgba(0,0,0,0);");
         basketListView.setCellFactory(p -> new ListCell<>() {
             @Override protected void updateItem(Product item, boolean empty) {
                 super.updateItem(item, empty);
@@ -162,7 +187,7 @@ public class SearchScreen {
         centerPanel.setAlignment(Pos.CENTER);
         centerPanel.getChildren().addAll(leftBox, rightBox);
 
-        Button btnBasket = new Button("MY BASKET");
+        Button btnBasket = new Button("MY BASKET(pick chain and product variant)");
         btnBasket.setMaxWidth(Double.MAX_VALUE);
         btnBasket.setPrefHeight(48);
         btnBasket.setStyle("-fx-background-color:#8c755e; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold;");
@@ -220,8 +245,14 @@ public class SearchScreen {
             } catch (Exception ex) { ex.printStackTrace(); }
         });
 
+        Label welcomeLbl = new Label("Welcome to Smart Market!");
+        welcomeLbl.setFont(Font.font("Comic Sans MS", FontWeight.BOLD, 28));
+        welcomeLbl.setTextFill(Color.web("#1565c0"));
+
+
+
         mainLayout.getChildren().addAll(
-            topGrid, centerPanel, btnBasket, btnMap, btnCalc
+            welcomeLbl, topGrid, noteLabel, centerPanel, btnBasket, btnMap, btnCalc
         );
 
         root.getChildren().add(mainLayout);
@@ -347,7 +378,7 @@ public class SearchScreen {
     private ListView<Product> buildProductListView() {
         ListView<Product> lv = new ListView<>(resultsModel);
         lv.setPrefSize(400, 450);
-        lv.setStyle("-fx-background-color: transparent;");
+        lv.setStyle("-fx-background-color: rgba(0,0,0,0); -fx-background: rgba(0,0,0,0);");
         lv.setCellFactory(p -> new ListCell<>() {
             @Override protected void updateItem(Product item, boolean empty) {
                 super.updateItem(item, empty);
@@ -366,7 +397,7 @@ public class SearchScreen {
     private ListView<String> buildVariantListView() {
         ListView<String> lv = new ListView<>(variantModel);
         lv.setPrefSize(400, 450);
-        lv.setStyle("-fx-background-color: transparent;");
+        lv.setStyle("-fx-background-color: rgba(0,0,0,0); -fx-background: rgba(0,0,0,0);");
         lv.setCellFactory(p -> new ListCell<>() {
             @Override protected void updateItem(String brand, boolean empty) {
                 super.updateItem(brand, empty);
@@ -410,7 +441,7 @@ public class SearchScreen {
 
         ListView<Product> lv = new ListView<>(model);
         lv.setPrefSize(400, 450);
-        lv.setStyle("-fx-background-color: transparent;");
+        lv.setStyle("-fx-background-color: rgba(0,0,0,0); -fx-background: rgba(0,0,0,0);");
         lv.setCellFactory(p -> new ListCell<>() {
             @Override protected void updateItem(Product item, boolean empty) {
                 super.updateItem(item, empty);

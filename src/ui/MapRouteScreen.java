@@ -183,6 +183,16 @@ public class MapRouteScreen {
     }
 
     private void calculateRoute() {
+        // Sepet boşsa rota hesaplama
+        if (basket == null || basket.isEmpty()) {
+            routeStops.clear();
+            routeInfoLabel.setText("No items in basket. Add products to see your route.");
+            distanceLabel.setText("Distance: — km");
+            walkingLabel.setText("Walking time: — min");
+            costLabel.setText("Total cost: — TL");
+            return;
+        }
+
         List<BasketItem> items = new ArrayList<>();
         for (int i = 0; i < basket.size(); i++)
             items.add(new BasketItem(i, basket.get(i).getProductId(), 1));
@@ -193,11 +203,17 @@ public class MapRouteScreen {
             for (RouteResultStore r : route.getStores()) {
                 StoreLocation l = findLoc(r.getStoreId()); if (l != null) routeStops.add(l);
             }
-        if (routeStops.isEmpty())
-            routeStops.addAll(storeLocations.subList(0, Math.min(2, storeLocations.size())));
-        double dist = (route != null) ? route.getTotalDistance() : 0;
-        double cost = (route != null) ? route.getTotalCost() : 0;
-        StringBuilder sb = new StringBuilder("Sen");
+        // Fallback kaldırıldı — sepet varsa ama rota bulunamadıysa bilgi ver
+        if (routeStops.isEmpty()) {
+            routeInfoLabel.setText("Could not find stores for your basket items.");
+            distanceLabel.setText("Distance: 0.00 km");
+            walkingLabel.setText("Walking time: 0 min");
+            costLabel.setText("Total cost: 0.00 TL");
+            return;
+        }
+        double dist = route.getTotalDistance();
+        double cost = route.getTotalCost();
+        StringBuilder sb = new StringBuilder("Start");
         for (StoreLocation s : routeStops) sb.append(" → ").append(chain(s.getStoreId()));
         routeInfoLabel.setText("Suggested Route: " + sb);
         distanceLabel.setText(String.format("Distance: %.2f km", dist));

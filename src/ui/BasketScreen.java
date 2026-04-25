@@ -34,11 +34,10 @@ public class BasketScreen {
     private List<Campaign>     campaigns;
     private List<PriceHistory> allPriceHistories;
 
-    private Map<String, Integer> quantities    = new LinkedHashMap<>();
-    private Map<String, String>  selectedChain = new LinkedHashMap<>();
-
-    // productId → seçili StockItem (varyant butonu tıklayınca set edilir)
-    private Map<String, StockItem> selectedVariant = new LinkedHashMap<>();
+    private static Map<String, Integer>   quantities        = new LinkedHashMap<>();
+    private static Map<String, String>    selectedChain     = new LinkedHashMap<>();
+    private static Map<String, StockItem> selectedVariant   = new LinkedHashMap<>();
+    private static Map<String, Integer>   variantQuantities = new LinkedHashMap<>();
 
     private Map<String, List<StockItem>> stockByChain   = new HashMap<>();
     private Map<String, List<StockItem>> stockByStoreId = new HashMap<>();
@@ -109,10 +108,17 @@ public class BasketScreen {
         btnHistory.setMaxWidth(Double.MAX_VALUE);
         btnHistory.setPrefHeight(44);
         btnHistory.setStyle("-fx-background-color: #5e818c; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 8;");
+        btnHistory.setOnMouseEntered(e -> { btnHistory.setScaleX(1.06); btnHistory.setScaleY(1.06); });
+        btnHistory.setOnMouseExited(e -> { btnHistory.setScaleX(1.0); btnHistory.setScaleY(1.0); });
         btnHistory.setOnAction(e -> {
             try {
-                // Seçili varyantları PriceHistoryScreen'e geç
-                List<StockItem> selected = new ArrayList<StockItem>(selectedVariant.values());
+                // variantQuantities'de qty>0 olan TÜM varyantları geç
+                List<StockItem> selected = new ArrayList<StockItem>();
+                for (StockItem s : stockItems) {
+                    if (variantQuantities.getOrDefault(s.getStockItemId(), 0) > 0) {
+                        selected.add(s);
+                    }
+                }
                 Scene previousScene = this.stage.getScene();
                 List<PriceHistory> ph = (allPriceHistories != null)
                     ? allPriceHistories : new ArrayList<PriceHistory>();
@@ -156,7 +162,6 @@ public class BasketScreen {
         stage.show();
     }
 
-    // ─────────────────────────────────────────────────────────────────
     private void rebuildItems() {
         itemsContainer.getChildren().clear();
 
@@ -172,7 +177,6 @@ public class BasketScreen {
             card.setPadding(new Insets(12));
             card.setStyle("-fx-background-color:#e8f5e9; -fx-border-color: #cccccc; -fx-border-width: 1.5; -fx-background-radius: 10; -fx-border-radius: 10;");
 
-            // ── Başlık + miktar ───────────────────────────────────────
             HBox topRow = new HBox(12);
             topRow.setAlignment(Pos.CENTER_LEFT);
 
@@ -181,33 +185,18 @@ public class BasketScreen {
             nameLbl.setTextFill(Color.BLACK);
             nameLbl.setMinWidth(200);
 
-            Button minusBtn = new Button("-");
-            minusBtn.setPrefWidth(32); minusBtn.setPrefHeight(32);
-            minusBtn.setStyle("-fx-background-color: #ef9a9a; -fx-font-weight: bold; -fx-background-radius: 6;");
+            int totalSelected = 0;
+            for (StockItem s : stockItems) {
+                if (s.getProductId().equalsIgnoreCase(pId))
+                    totalSelected += variantQuantities.getOrDefault(s.getStockItemId(), 0);
+            }
+            Label totalQtyLbl = new Label(totalSelected > 0 ? "Total number of products: " + totalSelected + "" : "");
+            totalQtyLbl.setFont(Font.font("System", FontWeight.BOLD, 13));
+            totalQtyLbl.setTextFill(Color.web("#1565c0"));
 
-            Label qtyLbl = new Label(String.valueOf(qty));
-            qtyLbl.setFont(Font.font("System", FontWeight.BOLD, 15));
-            qtyLbl.setTextFill(Color.BLACK);
-            qtyLbl.setMinWidth(28);
-            qtyLbl.setAlignment(Pos.CENTER);
-
-            Button plusBtn = new Button("+");
-            plusBtn.setPrefWidth(32); plusBtn.setPrefHeight(32);
-            plusBtn.setStyle("-fx-background-color: #a5d6a7; -fx-font-weight: bold; -fx-background-radius: 6;");
-
-            minusBtn.setOnAction(e -> {
-                int cur = quantities.getOrDefault(pId, 1);
-                if (cur > 1) { quantities.put(pId, cur - 1); rebuildItems(); rebuildTotal(); rebuildSuggestion(); }
-            });
-            plusBtn.setOnAction(e -> {
-                quantities.put(pId, quantities.getOrDefault(pId, 1) + 1);
-                rebuildItems(); rebuildTotal(); rebuildSuggestion();
-            });
-
-            topRow.getChildren().addAll(nameLbl, minusBtn, qtyLbl, plusBtn);
+            topRow.getChildren().addAll(nameLbl, totalQtyLbl);
             card.getChildren().add(topRow);
 
-            // ── Zincir butonları ──────────────────────────────────────
             HBox chainRow = new HBox(8);
             chainRow.setAlignment(Pos.CENTER_LEFT);
             Label chainLbl = new Label("Mağaza:");
@@ -255,14 +244,13 @@ public class BasketScreen {
                     chainBg, chainBorder));
                 chainBtn.setOnAction(e -> {
                     selectedChain.put(pId, chain);
-                    selectedVariant.remove(pId); // zincir değişince varyant seçimi sıfırla
+                    selectedVariant.remove(pId); 
                     rebuildItems(); rebuildTotal();
                 });
                 chainRow.getChildren().add(chainBtn);
             }
             card.getChildren().add(chainRow);
 
-            // ── Varyant listesi (zincir seçilmişse) ──────────────────
             if (!curChain.isEmpty()) {
                 List<StockItem> variants = findAllByChain(normalize(curChain), pId);
                 if (!variants.isEmpty()) {
@@ -278,62 +266,94 @@ public class BasketScreen {
                     variantBox.getChildren().add(variantHeader);
 
                     for (StockItem v : variants) {
-                        String brand  = v.getBrand() != null ? v.getBrand() : "?";
-                        double vPrice = v.getEffectivePrice();
+                        String brand    = v.getBrand() != null ? v.getBrand() : "?";
+                        double vPrice   = v.getEffectivePrice();
+                        String sid      = v.getStockItemId();
+                        int    vQty     = variantQuantities.getOrDefault(sid, 0);
                         boolean isCheapestVariant = Math.abs(vPrice - cheapestVariantPrice) < 0.01;
-                        boolean isVarSelected = curSelected != null
-                            && v.getStockItemId().equals(curSelected.getStockItemId());
+                        boolean hasQty  = vQty > 0;
 
-                        // Satır: tıklanabilir HBox
-                        HBox varRow = new HBox();
+                        HBox varRow = new HBox(8);
                         varRow.setAlignment(Pos.CENTER_LEFT);
-                        varRow.setPadding(new Insets(2, 4, 2, 4));
+                        varRow.setPadding(new Insets(3, 4, 3, 4));
 
-                        Label vLbl = new Label(String.format("  • %-28s  %.2f TL", brand, vPrice));
+                        // Ürün label
+                        Label vLbl = new Label(String.format("%-28s  %.2f TL", brand, vPrice));
                         vLbl.setFont(Font.font("Monospaced", FontWeight.BOLD, 12));
+                        vLbl.setMinWidth(320);
 
-                        if (isVarSelected) {
-                            // Seçili: mor
-                            varRow.setStyle("-fx-background-color:#ede7f6; -fx-background-radius:4; -fx-border-color:#6a1b9a; -fx-border-radius:4; -fx-border-width:1.5; -fx-cursor:hand;");
+                        if (hasQty) {
+                            varRow.setStyle("-fx-background-color:#ede7f6; -fx-background-radius:4; -fx-border-color:#6a1b9a; -fx-border-radius:4; -fx-border-width:1.5;");
                             vLbl.setTextFill(Color.web("#4a148c"));
                         } else if (isCheapestVariant) {
-                            // En ucuz: yeşil
-                            varRow.setStyle("-fx-background-color:#e8f5e9; -fx-background-radius:4; -fx-border-color:#388e3c; -fx-border-radius:4; -fx-border-width:1; -fx-cursor:hand;");
+                            varRow.setStyle("-fx-background-color:#e8f5e9; -fx-background-radius:4; -fx-border-color:#388e3c; -fx-border-radius:4; -fx-border-width:1;");
                             vLbl.setTextFill(Color.web("#1b5e20"));
                         } else {
-                            varRow.setStyle("-fx-background-color:transparent; -fx-cursor:hand;");
+                            varRow.setStyle("-fx-background-color:transparent;");
                             vLbl.setTextFill(Color.web("#333333"));
                         }
 
-                        varRow.getChildren().add(vLbl);
+                        // + - butonları
+                        Button vMinus = new Button("−");
+                        vMinus.setPrefSize(26, 26);
+                        vMinus.setStyle("-fx-background-color:#ef9a9a; -fx-font-weight:bold; -fx-background-radius:5;");
+                        vMinus.setVisible(hasQty);
+                        vMinus.setManaged(hasQty);
 
-                        // Tıklanınca seç/seçimi kaldır
+                        Label vQtyLbl = new Label(String.valueOf(vQty));
+                        vQtyLbl.setFont(Font.font("System", FontWeight.BOLD, 13));
+                        vQtyLbl.setMinWidth(20);
+                        vQtyLbl.setAlignment(Pos.CENTER);
+                        vQtyLbl.setVisible(hasQty);
+                        vQtyLbl.setManaged(hasQty);
+
+                        Button vPlus = new Button("+");
+                        vPlus.setPrefSize(26, 26);
+                        vPlus.setStyle("-fx-background-color:#a5d6a7; -fx-font-weight:bold; -fx-background-radius:5;");
+
                         final StockItem finalV = v;
-                        varRow.setOnMouseClicked(e -> {
-                            if (isVarSelected) {
-                                selectedVariant.remove(pId); // tekrar tıkla = seçimi kaldır
+                        vPlus.setOnAction(e -> {
+                            variantQuantities.put(sid, variantQuantities.getOrDefault(sid, 0) + 1);
+                            selectedVariant.put(pId, finalV);
+                            updateTopQty(pId);
+                            rebuildItems(); rebuildTotal(); rebuildSuggestion();
+                        });
+                        vMinus.setOnAction(e -> {
+                            int cur = variantQuantities.getOrDefault(sid, 0);
+                            if (cur > 1) {
+                                variantQuantities.put(sid, cur - 1);
                             } else {
-                                selectedVariant.put(pId, finalV);
+                                variantQuantities.remove(sid);
+                                // Bu tek seçiliyse selectedVariant'ı temizle
+                                if (curSelected != null && curSelected.getStockItemId().equals(sid)) {
+                                    selectedVariant.remove(pId);
+                                }
                             }
-                            rebuildItems(); rebuildTotal();
+                            updateTopQty(pId);
+                            rebuildItems(); rebuildTotal(); rebuildSuggestion();
                         });
 
+                        varRow.getChildren().addAll(vLbl, vMinus, vQtyLbl, vPlus);
                         variantBox.getChildren().add(varRow);
                     }
 
-                    // Özet — seçili varyant varsa onu, yoksa en ucuzu göster
-                    StockItem summaryStock = curSelected != null ? curSelected : variants.get(0);
-                    double summaryPrice = summaryStock.getEffectivePrice();
-                    double lineTotal = summaryPrice * qty;
-                    String selTag = curSelected != null
-                        ? "  ★ " + summaryStock.getBrand()
-                        : "  (cheapest: " + summaryStock.getBrand() + ")";
-                    Label lineLabel = new Label(
-                        String.format("%d x %.2f TL = %.2f TL  (%s)%s",
-                            qty, summaryPrice, lineTotal, curChain, selTag));
-                    lineLabel.setFont(Font.font("System", FontWeight.BOLD, 13));
-                    lineLabel.setTextFill(Color.web("#1565c0"));
-                    variantBox.getChildren().add(lineLabel);
+                    // Özet — seçili varyantların toplam tutarı
+                    double lineTotal = 0;
+                    StringBuilder summaryStr = new StringBuilder();
+                    for (StockItem v : variants) {
+                        int vq = variantQuantities.getOrDefault(v.getStockItemId(), 0);
+                        if (vq > 0) {
+                            lineTotal += v.getEffectivePrice() * vq;
+                            summaryStr.append(vq).append("x ").append(v.getBrand()).append("  ");
+                        }
+                    }
+                    if (lineTotal > 0) {
+                        Label lineLabel = new Label(
+                            String.format("%.2f TL  [%s]  (%s)", lineTotal, curChain, summaryStr.toString().trim()));
+                        lineLabel.setFont(Font.font("System", FontWeight.BOLD, 13));
+                        lineLabel.setTextFill(Color.web("#1565c0"));
+                        variantBox.getChildren().add(lineLabel);
+                    }
 
                     card.getChildren().add(variantBox);
                 }
@@ -348,17 +368,28 @@ public class BasketScreen {
         }
     }
 
+    private void updateTopQty(String pId) {
+
+        int total = 0;
+        for (StockItem s : stockItems) {
+            if (s.getProductId().equalsIgnoreCase(pId)) {
+                total += variantQuantities.getOrDefault(s.getStockItemId(), 0);
+            }
+        }
+        quantities.put(pId, Math.max(total, 1));
+    }
+
     private void rebuildTotal() {
         double total = 0;
         for (Product product : basket) {
-            String pId   = product.getProductId();
-            String chain = selectedChain.getOrDefault(pId, "");
-            int    qty   = quantities.getOrDefault(pId, 1);
-            if (chain.isEmpty()) continue;
-            StockItem stock = selectedVariant.containsKey(pId)
-                ? selectedVariant.get(pId)
-                : findByChain(normalize(chain), pId);
-            if (stock != null) total += stock.getEffectivePrice() * qty;
+            String pId = product.getProductId();
+       
+            for (StockItem s : stockItems) {
+                if (s.getProductId().equalsIgnoreCase(pId)) {
+                    int vqty = variantQuantities.getOrDefault(s.getStockItemId(), 0);
+                    if (vqty > 0) total += s.getEffectivePrice() * vqty;
+                }
+            }
         }
         totalLabel.setText("TOTAL : " + String.format("%.2f TL", total));
     }

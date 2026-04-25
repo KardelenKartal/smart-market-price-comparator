@@ -5,9 +5,7 @@ import util.GeoUtils;
 
 import java.util.*;
 
-/**
- * RouteOptimizer — sepetteki ürünlere göre en uygun alışveriş rotasını hesaplar.
- */
+
 public class RouteOptimizer {
 
     public RouteResult optimizeRoute(List<BasketItem> basketItems,
@@ -17,7 +15,6 @@ public class RouteOptimizer {
 
         if (basketItems == null || basketItems.isEmpty()) return emptyResult();
 
-        // 1. Zincir bazında stok indeksi
         Map<String, List<StockItem>> stockByChain = new HashMap<>();
         for (StockItem s : nvl(stockItems)) {
             String chain = normalize(s.getChain());
@@ -25,12 +22,11 @@ public class RouteOptimizer {
                 stockByChain.computeIfAbsent(chain, k -> new ArrayList<>()).add(s);
         }
 
-        // 2. Her ürün için en ucuz zinciri bul
         Set<String> neededChains = new LinkedHashSet<>();
         double totalCost = 0;
 
         for (BasketItem bi : basketItems) {
-            String pid       = bi.getStockItemId(); // MapRouteScreen productId geçiriyor
+            String pid       = bi.getStockItemId(); 
             String bestChain = "";
             double bestPrice = Double.MAX_VALUE;
 
@@ -51,7 +47,6 @@ public class RouteOptimizer {
 
         if (neededChains.isEmpty()) return emptyResult();
 
-        // 3. Her zincir için başlangıca en yakın şubeyi seç
         List<StoreLocation> waypoints = new ArrayList<>();
         for (String chain : neededChains) {
             StoreLocation nearest = null;
@@ -83,7 +78,6 @@ public class RouteOptimizer {
         return result;
     }
 
-    // Brute-force en kısa rota
     private List<StoreLocation> findShortestRoute(double startLat, double startLon,
                                                    List<StoreLocation> points) {
         if (points.size() <= 1) return new ArrayList<>(points);
@@ -108,7 +102,6 @@ public class RouteOptimizer {
         return total;
     }
 
-    // Heap's algorithm ile tüm permütasyonlar
     private List<List<StoreLocation>> permutations(List<StoreLocation> list) {
         List<List<StoreLocation>> result = new ArrayList<>();
         StoreLocation[] arr = list.toArray(new StoreLocation[0]);
@@ -127,7 +120,6 @@ public class RouteOptimizer {
         return result;
     }
 
-    // "A101-01"→"a101", "MIGROS-02"→"migros", "CF-01"→"carefour"
     private String chainFromStoreId(String storeId) {
         if (storeId == null) return "";
         int dash = storeId.lastIndexOf('-');
