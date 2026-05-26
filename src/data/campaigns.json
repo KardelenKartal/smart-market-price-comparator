@@ -1,0 +1,134 @@
+[
+  {
+    "campaignId": "C001",
+    "stockItemId": "SI0033",
+    "productName": "MILK",
+    "chain": "MIGROS",
+    "type": "WEEKLY",
+    "discountRate": 15,
+    "discountType": "PERCENTAGE",
+    "startDate": "W1",
+    "endDate": "W1+7days"
+  },
+  {
+    "campaignId": "C002",
+    "stockItemId": "SI0212",
+    "productName": "COLA",
+    "chain": "A101",
+    "type": "WEEKLY",
+    "discountRate": 10,
+    "discountType": "PERCENTAGE",
+    "startDate": "W1",
+    "endDate": "W1+7days"
+  },
+  {
+    "campaignId": "C003",
+    "stockItemId": "SI0145",
+    "productName": "SHAMPOO",
+    "chain": "BIM",
+    "type": "FLASH",
+    "discountRate": 20,
+    "discountType": "PERCENTAGE",
+    "startDate": "W1",
+    "endDate": "W1+2days"
+  },
+  {
+    "campaignId": "C004",
+    "stockItemId": "SI0107",
+    "productName": "CHICKEN",
+    "chain": "CAREFOUR",
+    "type": "WEEKLY",
+    "discountRate": 12,
+    "discountType": "PERCENTAGE",
+    "startDate": "W2",
+    "endDate": "W2+7days"
+  },
+  {
+    "campaignId": "C005",
+    "stockItemId": "SI0061",
+    "productName": "EGGS",
+    "chain": "A101",
+    "type": "FLASH",
+    "discountRate": 25,
+    "discountType": "PERCENTAGE",
+    "startDate": "W2",
+    "endDate": "W2+2days"
+  },
+  {
+    "campaignId": "C006",
+    "stockItemId": "SI0257",
+    "productName": "WATER",
+    "chain": "MIGROS",
+    "type": "WEEKLY",
+    "discountRate": 10,
+    "discountType": "PERCENTAGE",
+    "startDate": "W2",
+    "endDate": "W2+7days"
+  },
+  {
+    "campaignId": "C007",
+    "stockItemId": "SI0180",
+    "productName": "TOILET PAPER",
+    "chain": "BIM",
+    "type": "FLASH",
+    "discountRate": 15,
+    "discountType": "PERCENTAGE",
+    "startDate": "W3",
+    "endDate": "W3+2days"
+  },
+  {
+    "campaignId": "C008",
+    "stockItemId": "SI0239",
+    "productName": "COLA",
+    "chain": "SOK",
+    "type": "WEEKLY",
+    "discountRate": 18,
+    "discountType": "PERCENTAGE",
+    "startDate": "W3",
+    "endDate": "W3+7days"
+  },
+  {
+    "campaignId": "C009",
+    "stockItemId": "SI0038",
+    "productName": "YOGURT",
+    "chain": "MIGROS",
+    "type": "FLASH",
+    "discountRate": 30,
+    "discountType": "PERCENTAGE",
+    "startDate": "W3",
+    "endDate": "W3+2days"
+  },
+  {
+    "campaignId": "C010",
+    "stockItemId": "SI0277",
+    "productName": "CHOCOLATE BAR",
+    "chain": "CAREFOUR",
+    "type": "WEEKLY",
+    "discountRate": 8,
+    "discountType": "PERCENTAGE",
+    "startDate": "W4",
+    "endDate": "W4+7days"
+  },
+  {
+    "campaignId": "C011",
+    "stockItemId": "SI0287",
+    "productName": "OIL",
+    "chain": "A101",
+    "type": "FLASH",
+    "discountRate": 20,
+    "discountType": "PERCENTAGE",
+    "startDate": "W4",
+    "endDate": "W4+2days"
+  },
+  {
+    "campaignId": "C012",
+    "stockItemId": "SI0102",
+    "productName": "TUNA",
+    "chain": "MIGROS",
+    "type": "WEEKLY",
+    "discountRate": 12,
+    "discountType": "PERCENTAGE",
+    "startDate": "W4",
+    "endDate": "W4+7days"
+  }
+]
