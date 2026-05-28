@@ -264,6 +264,17 @@ Potential future improvements include:
 - and AI-powered shopping recommendations.
 
 ---
+## UI Screens
+
+| Product Search | Route Mode Selection |
+|---|---|
+| ![Product Search](screenshots/search.png) | ![Route Mode Selection](screenshots/mode-picker.png) |
+
+| Route Suggestions | Map and Recommended Route |
+|---|---|
+| ![Route Suggestions](screenshots/route-suggestions.png) | ![Map and Recommended Route](screenshots/map-route.png) |
+
+---
 
 # Installation
 
