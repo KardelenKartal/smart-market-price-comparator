@@ -266,17 +266,17 @@ Potential future improvements include:
 ---
 ## UI Screens
 
-| Product Search | Basket Screen |
+| Product Search | Variant Popup |
 |---|---|
-| ![Product Search](screenshots/search.png) | ![Basket Screen](screenshots/basket.png) |
+| ![Product Search](screenshots/search.png) | ![Variant Popup](screenshots/variant-pop-up.png) |
 
-| Route Mode Selection | Route Suggestions |
+| Basket Screen | Route Mode Selection |
 |---|---|
-| ![Route Mode Selection](screenshots/mode-picker.png) | ![Route Suggestions](screenshots/route-suggestions.png) |
+| ![Basket Screen](screenshots/basket.png) | ![Route Mode Selection](screenshots/mode-picker.png) |
 
-| Map and Recommended Route |
-|---|
-| ![Map and Recommended Route](screenshots/map.png) |
+| Route Suggestions | Map and Recommended Route |
+|---|---|
+| ![Route Suggestions](screenshots/route-suggestion.png) | ![Map and Recommended Route](screenshots/map.png) |
 ---
 
 # Installation
