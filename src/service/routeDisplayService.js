@@ -1,4 +1,5 @@
 import * as L from 'leaflet';
+import { haversine } from './geoUtils.js';
 
 /**
  * routeDisplayService.js
@@ -21,9 +22,11 @@ export async function drawRoute(map, routeResult, storeLocations, startLat, star
   clearRoute(map);
   const waypoints = buildWaypoints(routeResult, storeLocations, startLat, startLon);
   if (waypoints.length === 0) return;
+  
   try {
     const routeCoords = await fetchORSRoute(waypoints);
-    _drawPolyline(map, routeCoords);
+    if (!map._panes) return;
+   _drawPolyline(map, routeCoords);
   } catch (err) {
     console.warn('ORS failed, drawing straight lines:', err);
     const fallbackCoords = waypoints.map(wp => [wp.lat, wp.lon]);
@@ -145,6 +148,7 @@ function findLocation(storeLocations, storeId) {
   return storeLocations.find(loc => loc.storeId.toLowerCase() === storeId.toLowerCase()) || null;
 }
 
+/*
 function haversine(lat1, lon1, lat2, lon2) {
   const R = 6371;
   const dLat = toRad(lat2 - lat1), dLon = toRad(lon2 - lon1);
@@ -153,3 +157,4 @@ function haversine(lat1, lon1, lat2, lon2) {
 }
 
 function toRad(deg) { return deg * Math.PI / 180; }
+*/
