@@ -41,14 +41,12 @@ export const colors = {
 
 export const s = {
   phone: {
-    width: '100%',
-    background: colors.pageBg,
-    borderRadius: 20,
-    overflow: 'hidden',
-    border: `1.5px solid ${colors.border}`,
-    fontFamily: 'system-ui, sans-serif',
-  },
-
+  width: '100vw',
+  minHeight: '100vh',
+  background: colors.pageBg,
+  overflow: 'hidden',
+  fontFamily: 'system-ui, sans-serif',
+},
   topbar: {
     background: colors.topbar,
     padding: '11px 14px 9px',
@@ -61,6 +59,8 @@ export const s = {
   tbSub:   { fontSize: 11, color: colors.topbarSub },
 
   body: {
+    flex: 1,
+    overflow: 'hidden',
     background: 'rgba(245,246,249,0.93)',
     padding: '11px 12px',
   },

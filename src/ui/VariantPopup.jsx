@@ -41,7 +41,12 @@ export default function VariantPopup({ product, basket = [], addItem, updateQty,
 
       {/* Body */}
       <div style={s.body}>
-        <div style={{ background: 'rgba(26,77,36,0.18)', borderRadius: 10, padding: 8, marginBottom: 12 }}>
+        <div style={{ 
+          background: 'rgba(26,77,36,0.18)', 
+          borderRadius: 10, 
+          padding: 8,
+          marginBottom: 12
+           }}>
           <div style={{ background: '#fff', border: `1px solid ${colors.borderGreen}`, borderRadius: 10, padding: '10px 12px' }}>
 
             {/* Header */}
