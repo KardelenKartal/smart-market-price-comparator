@@ -131,7 +131,11 @@ export default function App() {
   // ================= RENDER =================
 
   return (
-    <div style={{ maxWidth: 320, margin: '0 auto', fontFamily: 'system-ui, sans-serif' }}>
+    <div style={{
+  width: '100vw',
+  minHeight: '100vh',
+  fontFamily: 'system-ui, sans-serif'
+}}>
 
       {screen === SCREENS.SEARCH && (
         <SearchScreen
