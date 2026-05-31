@@ -132,9 +132,12 @@ export default function App() {
 
   return (
     <div style={{
-  width: '100%',
+ width: '100%',
+  maxWidth: 430,
   minHeight: '100vh',
-  fontFamily: 'system-ui, sans-serif'
+  margin: '0 auto',
+  fontFamily: 'system-ui, sans-serif',
+  background: '#f5f6f9'
 }}>
 
       {screen === SCREENS.SEARCH && (
