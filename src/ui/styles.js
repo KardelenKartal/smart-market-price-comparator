@@ -41,8 +41,10 @@ export const colors = {
 
 export const s = {
   phone: {
-  width: '100vw',
-  minHeight: '100vh',
+  width: '100%',
+  height: '100%',
+  display: 'flex',
+  flexDirection: 'column',
   background: colors.pageBg,
   overflow: 'hidden',
   fontFamily: 'system-ui, sans-serif',
