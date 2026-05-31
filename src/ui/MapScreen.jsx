@@ -78,8 +78,8 @@ export default function MapScreen({
   };
 
   return (
-    <div style={{ ...s.phone, display: 'flex', flexDirection: 'column', height: 600 }}>
-      {/* Üst Bar */}
+<div style={{ ...s.phone }}>   
+     {/* Üst Bar */}
       <div style={s.topbar}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
           <button onClick={onBack} style={s.backBtn}>←</button>

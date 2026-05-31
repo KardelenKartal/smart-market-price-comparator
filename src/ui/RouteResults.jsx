@@ -21,7 +21,7 @@ export default function RouteResults({ routeResults, selectedMode, basket, onBac
   else emptyMessage = 'Bu sepet için uygun rota bulunamadı.';
 
   return (
-    <div style={{ ...s.phone, display: 'flex', flexDirection: 'column', height: 600 }}>
+    <div style={{ ...s.phone, display: 'flex', flexDirection: 'column' }}>
       {/* Üst Bar */}
       <div style={s.topbar}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
@@ -126,7 +126,7 @@ export default function RouteResults({ routeResults, selectedMode, basket, onBac
       </div>
 
       {/* Sticky bottom — sarı Haritada gör butonu */}
-      <div style={{ padding: '8px 12px', background: colors.pageBg, borderTop: `1px solid ${colors.softBorder}` }}>
+      <div style={{ padding: '8px 12px', paddingBottom: 'max(8px, env(safe-area-inset-bottom))', background: colors.pageBg, borderTop: `1px solid ${colors.softBorder}`, flexShrink: 0 }}>
         <button
           style={{ ...s.forwardBtn, marginBottom: 0 }}
           onClick={() => results.length > 0 && onShowMap?.(results[0])}

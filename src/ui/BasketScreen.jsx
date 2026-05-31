@@ -11,7 +11,7 @@ export default function BasketScreen({ basket, updateQty, removeItem, onCompareR
   }, 0);
 
   return (
-    <div style={{ ...s.phone, display: 'flex', flexDirection: 'column', height: 600 }}>
+    <div style={{ ...s.phone, display: 'flex', flexDirection: 'column' }}>
       {/* Üst Bar */}
       <div style={s.topbar}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
@@ -88,7 +88,7 @@ export default function BasketScreen({ basket, updateQty, removeItem, onCompareR
       </div>
 
       {/* Sabit alt — sarı buton */}
-      <div style={{ padding: '8px 12px', background: colors.pageBg, borderTop: `1px solid ${colors.softBorder}` }}>
+      <div style={{ padding: '8px 12px', paddingBottom: 'max(8px, env(safe-area-inset-bottom))', background: colors.pageBg, borderTop: `1px solid ${colors.softBorder}`, flexShrink: 0 }}>
         <div style={s.totalBar}>
           <span style={{ fontSize: 12, color: colors.textMid }}>Toplam</span>
           <span style={{ fontSize: 16, fontWeight: 600, color: colors.textDark }}>{total.toFixed(2)} TL</span>

@@ -41,14 +41,16 @@ export const colors = {
 
 export const s = {
   phone: {
-  width: '100%',
-  height: '100%',
-  display: 'flex',
-  flexDirection: 'column',
-  background: colors.pageBg,
-  overflow: 'hidden',
-  fontFamily: 'system-ui, sans-serif',
-},
+    width: '100%',
+    flex: 1,
+    minHeight: 0,
+    display: 'flex',
+    flexDirection: 'column',
+    background: colors.pageBg,
+    overflow: 'hidden',
+    fontFamily: 'system-ui, sans-serif',
+    boxSizing: 'border-box',
+  },
   topbar: {
     background: colors.topbar,
     padding: '11px 14px 9px',
@@ -91,7 +93,7 @@ export const s = {
   chipOn: {
     background: colors.chipOnBg,
     color: colors.chipOnText,
-    borderColor: colors.chipOnBg,
+    border: `1px solid ${colors.chipOnBg}`,
     borderRadius: 20,
     padding: '3px 10px',
     fontSize: 11,
@@ -153,7 +155,7 @@ export const s = {
     fontSize: 13,
     fontWeight: 700,
     textAlign: 'center',
-    marginBottom: 7,
+    marginBottom: 0,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -161,6 +163,7 @@ export const s = {
     cursor: 'pointer',
     border: '1.5px solid rgba(0,0,0,0.15)',
     width: '100%',
+    boxSizing: 'border-box',
   },
 
   outlineBtn: {

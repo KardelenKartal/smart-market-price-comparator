@@ -134,9 +134,12 @@ export default function App() {
     <div style={{
   width: '100%',
   maxWidth: 430,
-  height: '100dvh',
+  
+  height: '100%',
   margin: '0 auto',
   overflow: 'hidden',
+  display: 'flex',
+  flexDirection: 'column',
   fontFamily: 'system-ui, sans-serif',
   background: '#f5f6f9'
 }}>

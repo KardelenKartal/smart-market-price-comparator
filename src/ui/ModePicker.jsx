@@ -44,7 +44,7 @@ export default function ModePicker({
   };
 
   return (
-    <div style={{ ...s.phone, display: 'flex', flexDirection: 'column', height: 600, overflow: 'hidden' }}>
+    <div style={{ ...s.phone }}>
       {/* Üst Bar */}
       <div style={s.topbar}>
         <div style={s.tbTitle}>Sepetim</div>

@@ -90,7 +90,8 @@ export default function SearchScreen({
   };
 
   return (
-    <div style={{ ...s.phone, display: 'flex', flexDirection: 'column', height: 600, overflow: 'hidden' }}>
+    <div style={s.phone}>
+     
       {/* Top Bar */}
       <div style={s.topbar}>
   <div>
@@ -195,7 +196,13 @@ export default function SearchScreen({
       </div>
 
       {/* Sepetim button — always visible above bottom nav */}
-      <div style={{ padding: '6px 12px', background: colors.pageBg }}>
+      <div style={{
+        padding: '6px 12px',
+        paddingBottom: 'max(6px, env(safe-area-inset-bottom))',
+        background: colors.pageBg,
+        borderTop: `1px solid ${colors.softBorder}`,
+        flexShrink: 0,
+      }}>
       <button style={{ ...s.forwardBtn, marginBottom: 0 }} onClick={onBasket}>          
           🧺 Sepetim ({basketCount})
         </button>
